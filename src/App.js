@@ -1,12 +1,17 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import './normalize-fwd.css'
 import './styles/import.scss';
-
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <p>stefan click this button</p>
-      <button>Click me bruh</button>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+      <Routes>
+        <Route />
+      </Routes>
+      </div>
+    </Router>
   );
 }
 
