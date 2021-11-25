@@ -1,17 +1,26 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import './normalize-fwd.css'
+import { Route, Routes } from 'react-router-dom';
+import NavBar from './components/global/NavBar';
+import About from './components/pages/About';
+import Home from './components/pages/Home';
+import Lab from './components/pages/Lab';
+import Projects from './components/pages/Projects';
 import './styles/import.scss';
+
+
 function App() {
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+
         <NavBar />
-      <Routes>
-        <Route />
-      </Routes>
+    
+        <Routes>
+          <Route path="/" exact element={<Home />}/>
+          <Route path='projects' element={<Projects />}/>
+          <Route path='lab' element={<Lab />}/>
+          <Route path='about' element={<About />}/>
+        </Routes>
+
       </div>
-    </Router>
   );
 }
 
