@@ -6,7 +6,6 @@ import Lab from './components/pages/Lab';
 import Projects from './components/pages/Projects';
 import './styles/import.scss';
 
-
 function App() {
   return (
     <div className="App">
