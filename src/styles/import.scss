@@ -1,5 +1,5 @@
 @import 'package/typist';
-// @import 'package/toggle';
+@import 'package/toggle';
 
 body {
     background: #FAFAFA;
@@ -10,9 +10,4 @@ body {
       color: #EFEFEF;
     }
   }
-button {
-    padding: 1rem;
-    background: green;
-    color: white;
 
-}
