@@ -1,27 +1,18 @@
-body {
-    background: lightblue;
+@import 'package/typist';
+// @import 'package/toggle';
 
-}
+body {
+    background: #FAFAFA;
+    color: #1F2023;
+  
+    &.dark {
+      background: #1F2023;
+      color: #EFEFEF;
+    }
+  }
 button {
     padding: 1rem;
     background: green;
     color: white;
 
 }
-.Typist {
-    display: inline-block;
-}
-.Typist .Cursor {
-    display: inline-block; }
-    .Typist .Cursor--blinking {
-      opacity: 1;
-      animation: blink 1s linear infinite; }
-  
-  @keyframes blink {
-    0% {
-      opacity: 1; }
-    50% {
-      opacity: 0; }
-    100% {
-      opacity: 1; } }
-  

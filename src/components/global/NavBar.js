@@ -6,7 +6,6 @@ function NavBar() {
         <header>
             <div className="navbar">
                 <Link to='/'><h1>RR</h1></Link>
-
                 <nav>
                     <ul>
                         <li><Link to='/'>Home</Link></li>
