@@ -1,8 +1,11 @@
 import { useEffect, useMemo } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import createPersistedState from 'use-persisted-state';
+import {RiMoonClearLine} from 'react-icons/ri'
 
 const useColorSchemeState = createPersistedState('colorScheme');
+
+// useColorScheme hook provided by Zain Sajjad (LogRocket)
 
 export function useColorScheme(): {
   isDark: boolean;
@@ -29,3 +32,4 @@ export function useColorScheme(): {
     setIsDark,
   };
 }
+

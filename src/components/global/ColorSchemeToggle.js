@@ -1,6 +1,8 @@
 import Toggle from 'react-toggle';
 import "react-toggle/style.css"
 import { useColorScheme } from './useColorScheme';
+import {RiMoonClearLine} from 'react-icons/ri'
+import {FaSun} from 'react-icons/fa'
 
 const ColorSchemeToggle: React.FC = () => {
   const { isDark, setIsDark } = useColorScheme();
@@ -9,7 +11,7 @@ const ColorSchemeToggle: React.FC = () => {
       <Toggle
         checked={isDark}
         onChange={(event) => setIsDark(event.target.checked)}
-        icons={{ checked: 'x', unchecked: 'o' }}
+        icons={{ checked: <FaSun />, unchecked: <RiMoonClearLine /> }}
         aria-label="Dark mode"
       />
     </div>
