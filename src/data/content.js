@@ -1,4 +1,4 @@
-const content = {
+export const content = {
     projects: {
         landingContent: {
             title: 'Projects',
