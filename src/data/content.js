@@ -64,13 +64,15 @@ export const content = {
         },
     }, 
     lab: {
-        title: 'Lab',
-        excerpt: 'here are my lab come take a look at my lab bruh they are kinda cool not really though im workin on it',
-        cta: 'Visit Lab',
-        images: {
-            img1: 'binger.png',
-            img2: 'binger.png',
-            img3: 'binger.png',
+        landingContent: {
+            title: 'Lab',
+            excerpt: 'here are my lab come take a look at my lab bruh they are kinda cool not really though im workin on it',
+            cta: 'Visit Lab',
+            images: {
+                img1: 'binger.png',
+                img2: 'binger.png',
+                img3: 'binger.png',
+            },
         },
     },
 };
