@@ -1,24 +1,22 @@
 import React from 'react'
 import {content} from '../../data/content'
-  // core version + navigation, pagination modules:
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/swiper-bundle.min.css'
+
+// swiper core styles
 import 'swiper/swiper.min.css'
-import img from '../../images/binger.png'
 
+// modules styles
+import 'swiper/components/navigation/navigation.min.css'
+import 'swiper/components/pagination/pagination.min.css'
 
-  // configure Swiper to use modules
-
-
-// Copy with options
-
-// let data = {testData}.json
 
 function HomeScroll() {
     console.log(content)
     let proData = content.projects.landingContent
     let labData = content.lab.landingContent
+
+    const IMG_PATH = '/assets/images/'
 
     return (
         <div className='HomeScroll'>
@@ -27,18 +25,16 @@ function HomeScroll() {
                 <p>{proData.excerpt}</p>
 
                 <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}
                     slidesPerView={3}
-                    centeredSlides
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log("slide change")}
                     onSwiper={swiper => console.log(swiper)}
                     >
-                    <SwiperSlide><img src={img} alt="" /></SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
+                    <SwiperSlide><img src={`${IMG_PATH}${proData.images.img1}`} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={`${IMG_PATH}${proData.images.img2}`} alt="" /></SwiperSlide>
+                    <SwiperSlide><img src={`${IMG_PATH}${proData.images.img3}`} alt="" /></SwiperSlide>
                 </Swiper>
             </section>
 
