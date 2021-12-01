@@ -1,5 +1,18 @@
 import React from 'react'
 import {content} from '../../data/content'
+
+// Core modules imports are same as usual
+import { Navigation, Pagination, EffectCoverflow } from 'swiper';
+// Direct React component imports
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
+
+// Styles must use direct files imports
+import 'swiper/swiper.scss'; // core Swiper
+import 'swiper/modules/navigation/navigation.scss'; // Navigation module
+import 'swiper/modules/pagination/pagination.scss'; // Pagination module
+import 'swiper/modules/effect-coverflow/effect-coverflow.scss';
+import 'swiper/css/effect-coverflow';
+
 // // import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper';
 // import { Navigation } from 'swiper';
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -26,8 +39,8 @@ function HomeScroll() {
                 <h1>{proData.title}</h1>
                 <p>{proData.excerpt}</p>
 
-                {/* <Swiper
-                    modules={[Navigation]}
+                <Swiper
+                    modules={[Navigation, Pagination, EffectCoverflow]}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log("slide change")}
@@ -36,7 +49,7 @@ function HomeScroll() {
                     <SwiperSlide><img src={`${IMG_PATH}${proData.images.img1}`} alt="" /></SwiperSlide>
                     <SwiperSlide><img src={`${IMG_PATH}${proData.images.img2}`} alt="" /></SwiperSlide>
                     <SwiperSlide><img src={`${IMG_PATH}${proData.images.img3}`} alt="" /></SwiperSlide>
-                </Swiper> */}
+                </Swiper>
             </section>
 
             <section className="home-lab">
