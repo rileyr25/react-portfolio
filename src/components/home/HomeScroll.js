@@ -1,6 +1,9 @@
 import React from 'react'
 import {content} from '../../data/content'
-import { Swiper, SwiperSlide } from "swiper/react";
+// // import { Navigation, Pagination, Scrollbar, A11y, EffectCoverflow } from 'swiper';
+// import { Navigation } from 'swiper';
+// import { Swiper, SwiperSlide } from "swiper/react";
+
 import 'swiper/swiper-bundle.min.css'
 
 // swiper core styles
@@ -9,7 +12,6 @@ import 'swiper/swiper.min.css'
 // modules styles
 import 'swiper/components/navigation/navigation.min.css'
 import 'swiper/components/pagination/pagination.min.css'
-
 
 function HomeScroll() {
     console.log(content)
@@ -25,8 +27,7 @@ function HomeScroll() {
                 <p>{proData.excerpt}</p>
 
                 <Swiper
-                    spaceBetween={50}
-                    slidesPerView={3}
+                    modules={[Navigation]}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log("slide change")}
@@ -41,7 +42,9 @@ function HomeScroll() {
             <section className="home-lab">
                 <h1>{labData.title}</h1>
                 <p>{labData.excerpt}</p>
-                
+                <img  src={`${IMG_PATH}${labData.images.img1}`} alt="" />
+                <img  src={`${IMG_PATH}${labData.images.img2}`} alt="" />
+                <img  src={`${IMG_PATH}${labData.images.img3}`} alt="" />
             </section>
         </div>
     )
