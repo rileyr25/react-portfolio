@@ -75,4 +75,35 @@ export const content = {
             },
         },
     },
+    contact: {
+        message: 'hey contact me brotha!',
+        email: 'riley.r@telus.net',
+        socials: [
+            {
+                name: 'github',
+                link: 'https://github.com/rileyr25',
+            },
+            {
+                name: 'codepen',
+                link: 'https://codepen.io',
+            },
+            {
+                name: 'linkedin',
+                link: 'https://linkedin.com',
+            },
+        ]
+    },
+    about: {
+        skills: [
+            'html',
+            'css',
+            'js',
+            'jquery',
+            'react',
+            'wordpress',
+            'photoshop',
+            'figma',
+            'xd',
+        ]
+    }
 };

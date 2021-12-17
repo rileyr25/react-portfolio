@@ -5,6 +5,7 @@ import {BsChevronCompactDown} from 'react-icons/bs'
 function Landing() {
     return (
         <div className='landing-page'>
+            <div className="top-slant"></div>
             <div className="landing-main">
                 <h1>Riley Robertson</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit amet minus sint, nemo necessitatibus?</p>

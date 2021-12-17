@@ -1,5 +1,5 @@
 import React from 'react'
-import {content} from '../../data/content'
+import {content} from '../../../data/content'
 
 // Core modules imports are same as usual
 import { Navigation, Pagination, EffectCoverflow } from 'swiper';
@@ -36,7 +36,7 @@ function HomeScroll() {
     return (
         <div className='HomeScroll'>
             <section className="home-projects">
-                <h1>{proData.title}</h1>
+                <h2>{proData.title}</h2>
                 <p>{proData.excerpt}</p>
                 <div className="swiper-container">
                     <Swiper
@@ -54,12 +54,12 @@ function HomeScroll() {
             </section>
 
             <section className="home-lab">
-                <h1>{labData.title}</h1>
+                <h2>{labData.title}</h2>
                 <p>{labData.excerpt}</p>
                 <img  src={`${IMG_PATH}${labData.images.img1}`} alt="" />
                 <img  src={`${IMG_PATH}${labData.images.img2}`} alt="" />
                 <img  src={`${IMG_PATH}${labData.images.img3}`} alt="" />
-            </section>
+            </section> 
         </div>
     )
 }
