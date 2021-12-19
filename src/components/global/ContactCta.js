@@ -10,7 +10,7 @@ function ContactCta() {
             <p>{data.message}</p>
             <button>{data.email}</button>
             <ul>
-                {data.socials.map(social => <li><a href={social.link} target='_blank'>{social.name}</a></li>)}
+                {data.socials.map(social => <li><a href={social.link} target='_blank' rel='noreferrer'>{social.name}</a></li>)}
             </ul>
         </section>
     )

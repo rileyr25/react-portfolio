@@ -10,8 +10,9 @@ export const content = {
                 img3: 'binger.png',
             },
         },
-        sites: {
-            binger: {
+        sites: [
+            {
+                name: 'binger',
                 title: 'Binger Movie Database',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
@@ -28,8 +29,9 @@ export const content = {
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
-            foodExplorer: {
-                title: 'Food Explorer',
+            {
+                name: 'binger',
+                title: 'Binger Movie Database',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
                 excerpt: 'short excerpt',
@@ -38,14 +40,16 @@ export const content = {
                     img1: 'binger.png',
                 },
                 skills: [
+                    'react',
+                    'sass',
                     'html',
-                    'sass',
                     'javascript',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
-            school: {
-                title: 'Wordpress School Site',
+            {
+                name: 'binger',
+                title: 'Binger Movie Database',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
                 excerpt: 'short excerpt',
@@ -54,14 +58,32 @@ export const content = {
                     img1: 'binger.png',
                 },
                 skills: [
-                    'wordpress',
-                    'php',
+                    'react',
                     'sass',
+                    'html',
                     'javascript',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
-        },
+            {
+                name: 'binger',
+                title: 'Binger Movie Database',
+                liveLink: 'https://www.rileyrobertson.ca/binger',
+                repo: 'https://github.com/rileyr25/binger',
+                excerpt: 'short excerpt',
+                description: 'description of the project',
+                images: {
+                    img1: 'binger.png',
+                },
+                skills: [
+                    'react',
+                    'sass',
+                    'html',
+                    'javascript',
+                ],
+                about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
+            },
+        ],
     }, 
     lab: {
         landingContent: {
@@ -85,7 +107,7 @@ export const content = {
             },
             {
                 name: 'codepen',
-                link: 'https://codepen.io',
+                link: 'https://codepen.io/rileyr25',
             },
             {
                 name: 'linkedin',
