@@ -11,7 +11,26 @@ export const content = {
             },
         },
         sites: [
-            {
+            {   
+                type: 'dev',
+                name: 'binger',
+                title: 'Binger Movie Database',
+                liveLink: 'https://www.rileyrobertson.ca/binger',
+                repo: 'https://github.com/rileyr25/binger',
+                description: 'description of the project',
+                images: {
+                    img1: 'binger.png',
+                },
+                skills: [
+                    'react',
+                    'sass',
+                    'html',
+                    'javascript',
+                ],
+                about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
+            },
+            {   
+                type: 'dev',
                 name: 'binger',
                 title: 'Binger Movie Database',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
@@ -29,7 +48,8 @@ export const content = {
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
-            {
+            {   
+                type: 'dev',
                 name: 'binger',
                 title: 'Binger Movie Database',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
@@ -47,26 +67,9 @@ export const content = {
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
-            {
-                name: 'binger',
-                title: 'Binger Movie Database',
-                liveLink: 'https://www.rileyrobertson.ca/binger',
-                repo: 'https://github.com/rileyr25/binger',
-                excerpt: 'short excerpt',
-                description: 'description of the project',
-                images: {
-                    img1: 'binger.png',
-                },
-                skills: [
-                    'react',
-                    'sass',
-                    'html',
-                    'javascript',
-                ],
-                about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
-            },
-            {
-                name: 'binger',
+            {   
+                type: 'design',
+                name: 'binger mockup',
                 title: 'Binger Movie Database',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
