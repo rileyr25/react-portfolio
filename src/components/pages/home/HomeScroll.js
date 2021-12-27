@@ -27,7 +27,6 @@ import 'swiper/modules/pagination/pagination.scss'; // Pagination module
 // import 'swiper/components/pagination/pagination.min.css'
 
 function HomeScroll() {
-    console.log(content)
     let proData = content.projects.landingContent
     let labData = content.lab.landingContent
 

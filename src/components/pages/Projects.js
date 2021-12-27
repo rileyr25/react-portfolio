@@ -4,6 +4,13 @@ function Projects() {
 
     let siteData = content.projects.sites
     let siteFilter = ''
+
+    console.log(siteData)
+
+    // TODO: figure out how to access object property 'type' + evaluate value
+    // create a button that toggles the 'type' value that is displayed
+    // rewrite siteData filter
+
     return (
         <div>
             <h1>Projects</h1>
@@ -14,7 +21,7 @@ function Projects() {
                     <p>{site.description}</p>
                 </div>
                 )}
-        </div>
+        </div> 
     )
 }
 
