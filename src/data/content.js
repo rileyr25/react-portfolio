@@ -70,7 +70,7 @@ export const content = {
             {   
                 type: 'design',
                 name: 'binger mockup',
-                title: 'Binger Movie Database',
+                title: 'Binger Mock',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
                 excerpt: 'short excerpt',

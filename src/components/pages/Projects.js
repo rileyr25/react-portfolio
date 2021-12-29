@@ -15,6 +15,9 @@ function Projects() {
         <div>
             <h1>Projects</h1>
             
+            <button onClick={siteFilter = 'dev'}>Filter</button>
+
+
             {siteData.filter(site => site.type === {siteFilter}).map(site => 
                 <div className="site-card">
                     <h3>{site.title}</h3>
