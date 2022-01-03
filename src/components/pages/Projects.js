@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { content } from '../../data/content'
+import Icon from '../global/Icon'
 
-import { icons } from 'react-icons'
+
 function Projects() {
 
     let siteData = content.projects.sites
@@ -33,6 +34,7 @@ function Projects() {
                 />
                 <label for="design">Design</label>
             </div>
+
             <div className='site-display'>
                 {siteData.filter(site => site.type === type).map(site => 
                     <div className="site-card">
@@ -40,9 +42,9 @@ function Projects() {
                         <p>{site.description}</p>
                             <div className="languages">
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    {site.skills.map(skill => 
+                                        <li><Icon name={skill} /></li>
+                                    )}
                                 </ul>
                             </div>
                     </div>

@@ -25,7 +25,7 @@ export const content = {
                     'react',
                     'sass',
                     'html',
-                    'javascript',
+                    'php',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
