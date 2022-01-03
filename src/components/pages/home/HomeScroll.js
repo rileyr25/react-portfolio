@@ -1,6 +1,6 @@
 import React from 'react'
 import {content} from '../../../data/content'
-
+import { Link } from 'react-router-dom';
 // Core modules imports are same as usual
 import { Navigation, Pagination, EffectCoverflow } from 'swiper';
 // Direct React component imports
@@ -50,14 +50,18 @@ function HomeScroll() {
                         <SwiperSlide><img src={`${IMG_PATH}${proData.images.img3}`} alt="" /></SwiperSlide>
                     </Swiper>
                 </div>
+                <Link to='/projects'>View Projects</Link>
             </section>
 
             <section className="home-lab">
                 <h2>{labData.title}</h2>
                 <p>{labData.excerpt}</p>
-                <img  src={`${IMG_PATH}${labData.images.img1}`} alt="" />
-                <img  src={`${IMG_PATH}${labData.images.img2}`} alt="" />
-                <img  src={`${IMG_PATH}${labData.images.img3}`} alt="" />
+                <div className="lab-images">
+                    <img  src={`${IMG_PATH}${labData.images.img1}`} alt="" />
+                    <img  src={`${IMG_PATH}${labData.images.img2}`} alt="" />
+                    <img  src={`${IMG_PATH}${labData.images.img3}`} alt="" />
+                </div>
+                <Link to='/lab'>Visit Lab</Link>
             </section> 
         </div>
     )

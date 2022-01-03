@@ -79,9 +79,9 @@ export const content = {
                     img1: 'binger.png',
                 },
                 skills: [
-                    'react',
-                    'sass',
-                    'html',
+                    'figma',
+                    'photoshop',
+                    'xd',
                     'javascript',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
