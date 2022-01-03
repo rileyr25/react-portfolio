@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { content } from '../../data/content'
+
+import { icons } from 'react-icons'
 function Projects() {
 
     let siteData = content.projects.sites
@@ -9,9 +11,6 @@ function Projects() {
         setType(e.target.value)
     }
 
-    // TODO: figure out how to access object property 'type' + evaluate value
-    // create a button that toggles the 'type' value that is displayed
-    // rewrite siteData filter
     return (
         <div>
             <h1>Projects</h1>
@@ -24,6 +23,7 @@ function Projects() {
                 defaultChecked
                 onClick={toggleType}
                 />
+                <label for="dev">Development</label>
                 <input 
                 type="radio"
                 id='design'
@@ -31,6 +31,7 @@ function Projects() {
                 value='design'
                 onClick={toggleType}
                 />
+                <label for="design">Design</label>
             </div>
             <div className='site-display'>
                 {siteData.filter(site => site.type === type).map(site => 
