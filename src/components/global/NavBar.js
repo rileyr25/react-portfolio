@@ -6,7 +6,7 @@ function NavBar() {
         <header>
             <div className="navbar">
                 <Link to='/'><h1>RR</h1></Link>
-                <nav>
+                <nav aria-label="Main">
                     <ul>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/projects'>Projects</Link></li>

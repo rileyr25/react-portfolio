@@ -1,6 +1,7 @@
 import React from 'react'
 import Typist from 'react-typist'
 import {BsChevronCompactDown} from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 function Landing() {
     return (
@@ -25,11 +26,11 @@ function Landing() {
                     </span>
                 </p>
             </div>
-            <div className="homescroll-nav">
-                <span className="circle">0</span>
-                <span className="circle">1</span>
-                <span className="circle">2</span>
-                <span className="circle">3</span>
+            <div className="homescroll-nav" role="navigation" aria-label="Parallax Nav">
+                <Link to='#home' className="circle">0</Link>
+                <Link to='#home' className="circle">1</Link>
+                <Link to='#home' className="circle">2</Link>
+                <Link to='#home' className="circle">3</Link>
             </div>
             <div className="next-arrow">
                 <BsChevronCompactDown />

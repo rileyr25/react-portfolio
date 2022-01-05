@@ -5,67 +5,54 @@ import { SiPhp, SiAdobephotoshop, SiAdobexd } from 'react-icons/si'
 
 
 const Icon = ( props ) => {
-    // const languageIcons = [
-    //     FaHtml5,
-    //     FaCss3,
-    //     FaFigma,
-    //     FaReact,
-    //     FaWordpressSimple,
-    //     FaSass,
-    //     IoLogoJavascript,
-    //     SiPhp,
-    //     SiAdobephotoshop,
-    //     SiAdobexd,
-    // ]
 
     const languageIcons = [
         {
             name: 'html',
-            icon: FaHtml5,
+            ICON: FaHtml5,
         },
         {
             name: 'css',
-            icon: FaCss3,
+            ICON: FaCss3,
         },
         {
             name: 'figma',
-            icon: FaFigma,
+            ICON: FaFigma,
         },
         {
             name: 'react',
-            icon: FaReact,
+            ICON: FaReact,
         },
         {
             name: 'wordpress',
-            icon: FaWordpressSimple,
+            ICON: FaWordpressSimple,
         },
         {
             name: 'sass',
-            icon: FaSass,
+            ICON: FaSass,
         },
         {
             name: 'javascript',
-            icon: IoLogoJavascript,
+            ICON: IoLogoJavascript,
         },
         {
             name: 'php',
-            icon: SiPhp,
+            ICON: SiPhp,
         },
         {
             name: 'photoshop',
-            icon: SiAdobephotoshop,
+            ICON: SiAdobephotoshop,
         },
         {
             name: 'xd',
-            icon: SiAdobexd,
+            ICON: SiAdobexd,
         },
     ]
     return (
         <>
-            {/* {languageIcons.map((Icon, key) => (<Icon key={key} />))} */}
-            {languageIcons.filter(icon => icon.name == props.name)
-            .map((Icon, key) => 
-                (<Icon.icon key={key} />)
+            {languageIcons.filter(icon => icon.name === props.name)
+            .map((Icon, key) =>
+                (<Icon.ICON key={key} />)
             )}
         </>
     )
