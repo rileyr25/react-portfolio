@@ -1,12 +1,15 @@
 import React from 'react'
-import { FaHtml5, FaCss3, FaFigma, FaReact, FaWordpressSimple, FaSass} from 'react-icons/fa'
+import { FaHtml5, FaCss3, FaFigma, FaReact, FaWordpressSimple, FaSass, FaGithub, FaCodepen, FaLinkedin} from 'react-icons/fa'
 import { IoLogoJavascript } from 'react-icons/io'
 import { SiPhp, SiAdobephotoshop, SiAdobexd } from 'react-icons/si'
+import { BiHome, BiRocket, BiUser } from 'react-icons/bi'
+import { ImLab } from 'react-icons/im'
+import { HiOutlineMail } from 'react-icons/hi'
 
 
 const Icon = ( props ) => {
 
-    const languageIcons = [
+    const ico = [
         {
             name: 'html',
             ICON: FaHtml5,
@@ -47,10 +50,42 @@ const Icon = ( props ) => {
             name: 'xd',
             ICON: SiAdobexd,
         },
+        {
+            name: 'home',
+            ICON: BiHome,
+        },
+        {
+            name: 'projects',
+            ICON: BiRocket,
+        },
+        {
+            name: 'lab',
+            ICON: ImLab,
+        },
+        {
+            name: 'about',
+            ICON: BiUser,
+        },
+        {
+            name: 'github',
+            ICON: FaGithub,
+        },
+        {
+            name: 'codepen',
+            ICON: FaCodepen,
+        },
+        {
+            name: 'linkedin',
+            ICON: FaLinkedin,
+        },
+        {
+            name: 'email',
+            ICON: HiOutlineMail,
+        },
     ]
     return (
         <>
-            {languageIcons.filter(icon => icon.name === props.name)
+            {ico.filter(icon => icon.name === props.name)
             .map((Icon, key) =>
                 (<Icon.ICON key={key} />)
             )}
