@@ -4,6 +4,7 @@ import Icon from '../global/Icon'
 
 
 function Projects() {
+    const IMG_PATH = '/assets/images/'
 
     let siteData = content.projects.sites
     const [type, setType] = useState('dev')
@@ -38,15 +39,18 @@ function Projects() {
             <div className='site-display'>
                 {siteData.filter(site => site.type === type).map(site => 
                     <div className="site-card">
-                        <h3>{site.title}</h3>
-                        <p>{site.description}</p>
-                            <div className="languages">
-                                <ul>
-                                    {site.skills.map(skill => 
-                                        <li><Icon name={skill} /></li>
-                                    )}
-                                </ul>
-                            </div>
+                        <div className="site-info">
+                            <img src={`${IMG_PATH}${site.images.img1}`} alt="" />
+                            <h3>{site.title}</h3>
+                            <p>{site.description}</p>
+                                <div className="languages">
+                                    <ul>
+                                        {site.skills.map(skill =>
+                                            <li><Icon name={skill} /></li>
+                                        )}
+                                    </ul>
+                                </div>
+                        </div>
                     </div>
                 )}
             </div>

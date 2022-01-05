@@ -25,6 +25,12 @@ function Landing() {
                     </span>
                 </p>
             </div>
+            <div className="homescroll-nav">
+                <span className="circle">0</span>
+                <span className="circle">1</span>
+                <span className="circle">2</span>
+                <span className="circle">3</span>
+            </div>
             <div className="next-arrow">
                 <BsChevronCompactDown />
             </div>
