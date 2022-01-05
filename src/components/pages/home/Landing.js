@@ -3,6 +3,8 @@ import Typist from 'react-typist'
 import {BsChevronCompactDown} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
+import VerticalNav from './VerticalNav'
+
 function Landing() {
     return (
         <div className='landing-page'>
@@ -26,12 +28,7 @@ function Landing() {
                     </span>
                 </p>
             </div>
-            <div className="homescroll-nav" role="navigation" aria-label="Parallax Nav">
-                <Link to='#home' className="circle">0</Link>
-                <Link to='#home' className="circle">1</Link>
-                <Link to='#home' className="circle">2</Link>
-                <Link to='#home' className="circle">3</Link>
-            </div>
+            <VerticalNav />
             <div className="next-arrow">
                 <BsChevronCompactDown />
             </div>

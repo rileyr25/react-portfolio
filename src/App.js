@@ -9,7 +9,7 @@ import './styles/import.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div id='#' className="App">
         <ColorSchemeToggle />
         <NavBar />
     

@@ -34,7 +34,7 @@ function HomeScroll() {
 
     return (
         <div className='HomeScroll'>
-            <section className="home-projects">
+            <section id='projects' className="home-projects">
                 <h2>{proData.title}</h2>
                 <p>{proData.excerpt}</p>
                 <div className="swiper-container">
@@ -53,7 +53,7 @@ function HomeScroll() {
                 <Link to='/projects'>View Projects</Link>
             </section>
 
-            <section className="home-lab">
+            <section id='lab' className="home-lab">
                 <h2>{labData.title}</h2>
                 <p>{labData.excerpt}</p>
                 <div className="lab-images">

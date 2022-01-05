@@ -5,7 +5,7 @@ import { content } from '../../data/content'
 function ContactCta() {
     let data = content.contact
     return (
-        <section className='contact-cta'>
+        <section id='contact-sec' className='contact-cta'>
             <h2>Get in Touch</h2>
             <p>{data.message}</p>
             <button>{data.email}</button>
