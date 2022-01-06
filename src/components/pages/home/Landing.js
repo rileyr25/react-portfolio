@@ -1,7 +1,6 @@
 import React from 'react'
 import Typist from 'react-typist'
 import {BsChevronCompactDown} from 'react-icons/bs'
-import { Link } from 'react-router-dom'
 
 import VerticalNav from './VerticalNav'
 

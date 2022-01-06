@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Icon from './Icon'
 function NavBar() {
@@ -10,16 +11,16 @@ function NavBar() {
                     <ul>
                         
                         <li>
-                            <Link to='/'><Icon name="home"/>Home</Link>
+                            <NavLink exact activeClassName='active' to='/'><Icon name="home"/>Home</NavLink>
                         </li>
                         <li>
-                            <Link to='/projects'><Icon name="projects"/>Projects</Link>
+                            <NavLink activeClassName='active' to='/projects'><Icon name="projects"/>Projects</NavLink>
                         </li>
                         <li>
-                            <Link to='/lab'><Icon name="lab"/>Lab</Link>
+                            <NavLink activeClassName='active' to='/lab'><Icon name="lab"/>Lab</NavLink>
                         </li>
                         <li>
-                            <Link to='/about'><Icon name="about"/>About</Link>
+                            <NavLink activeClassName='active' to='/about'><Icon name="about"/>About</NavLink>
                         </li>
 
                     </ul>
