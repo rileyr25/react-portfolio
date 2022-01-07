@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <header>
             <div className="navbar">
-                <Link to='/'><h1>RR</h1></Link>
+                <Link to='/' className="logo"><h1>RR</h1></Link>
                 <nav aria-label="Main">
                     <ul>
                         

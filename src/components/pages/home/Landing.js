@@ -1,7 +1,7 @@
 import React from 'react'
 import Typist from 'react-typist'
 import {BsChevronCompactDown} from 'react-icons/bs'
-
+import { HashLink } from 'react-router-hash-link'
 import VerticalNav from './VerticalNav'
 
 function Landing() {
@@ -29,7 +29,7 @@ function Landing() {
             </div>
             <VerticalNav />
             <div className="next-arrow">
-                <BsChevronCompactDown />
+                <HashLink smooth to='#projects'><BsChevronCompactDown /></HashLink>
             </div>
         </div>
     )

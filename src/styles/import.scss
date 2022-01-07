@@ -1,6 +1,5 @@
-@import 'package/typist';
-@import 'package/toggle';
-
+@import 'package/typist', 'package/toggle';
+@use 'home/landing', 'global/navigation';
 body {
     background: #FAFAFA;
     color: #1F2023;
