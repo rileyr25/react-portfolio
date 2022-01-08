@@ -2,8 +2,7 @@ import React from 'react'
 import { FaHtml5, FaCss3, FaFigma, FaReact, FaWordpressSimple, FaSass, FaGithub, FaCodepen, FaLinkedin} from 'react-icons/fa'
 import { IoLogoJavascript } from 'react-icons/io'
 import { SiPhp, SiAdobephotoshop, SiAdobexd } from 'react-icons/si'
-import { BiHome, BiRocket, BiUser } from 'react-icons/bi'
-import { ImLab } from 'react-icons/im'
+import { BiHome, BiRocket, BiUser, BiDna } from 'react-icons/bi'
 import { HiOutlineMail } from 'react-icons/hi'
 
 
@@ -60,7 +59,7 @@ const Icon = ( props ) => {
         },
         {
             name: 'lab',
-            ICON: ImLab,
+            ICON: BiDna,
         },
         {
             name: 'about',

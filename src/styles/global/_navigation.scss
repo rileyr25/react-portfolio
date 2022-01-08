@@ -17,12 +17,20 @@
             background: black;
             justify-content: space-between;
             a {
+                color: whitesmoke;
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                font-size: 14px;
+                text-decoration: none;
+                &.active {
+                    color: rgb(31, 112, 235);
+                }
                 svg {
-                    font-size: 2.25rem;
+                    width: 25px;
+                    height: auto;
+                    padding-bottom: 5px;
                 }
             }
         }
