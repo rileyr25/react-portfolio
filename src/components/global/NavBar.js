@@ -11,16 +11,20 @@ function NavBar() {
                     <ul>
                         
                         <li>
-                            <NavLink exact activeClassName='active' to='/'><Icon name="home"/>Home</NavLink>
+                            <NavLink exact activeClassName='active' to='/'>
+                            <Icon name="home"/>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink activeClassName='active' to='/projects'><Icon name="projects"/>Projects</NavLink>
+                            <NavLink activeClassName='active' to='/projects'>
+                            <Icon name="projects"/>Projects</NavLink>
                         </li>
                         <li>
-                            <NavLink activeClassName='active' to='/lab'><Icon name="lab"/>Lab</NavLink>
+                            <NavLink activeClassName='active' to='/lab'>
+                            <Icon name="lab"/>Lab</NavLink>
                         </li>
                         <li>
-                            <NavLink activeClassName='active' to='/about'><Icon name="about"/>About</NavLink>
+                            <NavLink activeClassName='active' to='/about'>
+                            <Icon name="about"/>About</NavLink>
                         </li>
 
                     </ul>

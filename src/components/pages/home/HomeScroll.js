@@ -37,13 +37,14 @@ function HomeScroll() {
             <section id='projects' className="home-projects">
                 <h2>{proData.title}</h2>
                 <p>{proData.excerpt}</p>
-                <div className="swiper-container">
+                <div className="swiper-container" style={{zIndex: '0'}}>
                     <Swiper
                         modules={[Navigation, Pagination, EffectCoverflow]}
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true }}
                         onSlideChange={() => console.log("slide change")}
                         onSwiper={swiper => console.log(swiper)}
+                        
                         >
                         <SwiperSlide><img src={`${IMG_PATH}${proData.images.img1}`} alt="" /></SwiperSlide>
                         <SwiperSlide><img src={`${IMG_PATH}${proData.images.img2}`} alt="" /></SwiperSlide>
