@@ -3,12 +3,17 @@ import Typist from 'react-typist'
 import {BsChevronCompactDown} from 'react-icons/bs'
 import { HashLink } from 'react-router-hash-link'
 import VerticalNav from './VerticalNav'
+import { motion } from 'framer-motion'
 
 function Landing() {
     return (
         <div className='landing-page'>
             <div className="top-slant"></div>
-            <div className="landing-main">
+            <motion.div className="landing-main"
+                initial={{x: "-100%"}}
+                animate={{x: 0}}
+                transition={{ease: "easeInOut", duration: 1.5, type: "spring"}}
+            >
                 <h1>Riley Robertson</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit amet minus sint, nemo necessitatibus?</p>
                 <p>Front End
@@ -16,7 +21,7 @@ function Landing() {
                     <Typist
                 
                     >
-                        <Typist.Delay ms={2000} />
+                        <Typist.Delay ms={2500} />
                         &lt;<span>Developer </span>/&gt;
                         <Typist.Backspace count={14} delay={5000}/>
                         <Typist.Delay ms={500}/>
@@ -26,7 +31,7 @@ function Landing() {
                     </Typist>
                     </span>
                 </p>
-            </div>
+            </motion.div>
             <VerticalNav />
             <div className="next-arrow">
                 <HashLink smooth to='#projects'><BsChevronCompactDown /></HashLink>
