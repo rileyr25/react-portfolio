@@ -1,4 +1,10 @@
-.landing-page {
+.landing {
+    background-color: lightgray;
+    height: 80vh;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     //secondary nav styles
     .homescroll-nav {
         position: fixed;
@@ -18,7 +24,16 @@
             line-height: 25px;
         }
     }
+    
     .landing-main {
+        margin: 0 2rem;
         overflow-x: hidden;
+    }
+
+    .next-arrow {
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+        justify-content: flex-end;
     }
 }

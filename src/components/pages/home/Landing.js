@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 function Landing() {
     return (
-        <div className='landing-page'>
+        <div className='landing'>
             <div className="top-slant"></div>
             <motion.div className="landing-main"
                 initial={{x: "-100%"}}
