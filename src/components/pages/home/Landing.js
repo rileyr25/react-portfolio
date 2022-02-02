@@ -10,9 +10,9 @@ function Landing() {
         <div className='landing'>
             <div className="top-slant"></div>
             <motion.div className="landing-main"
-                initial={{x: "-100%"}}
-                animate={{x: 0}}
-                transition={{ease: "easeInOut", duration: 1.5, type: "spring"}}
+                initial={{y: "100%", opacity: 0}}
+                animate={{y: 0, opacity: 1}}
+                transition={{ease: "easeOut", duration: 1}}
             >
                 <h1>Riley Robertson</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit amet minus sint, nemo necessitatibus?</p>
@@ -34,7 +34,7 @@ function Landing() {
             </motion.div>
             <VerticalNav />
             <div className="next-arrow">
-                <HashLink smooth to='#projects'><BsChevronCompactDown /></HashLink>
+                <HashLink className='arrow-link' smooth to='#projects'><BsChevronCompactDown /></HashLink>
             </div>
         </div>
     )
