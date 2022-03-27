@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Icon from './Icon'
 function NavBar() {
     return (
-        <header>
+        <header className='text-white bg-black dark:bg-blue-700'>
             <div className="navbar">
                 <Link to='/' className="logo"><h1>RR</h1></Link>
                 <nav aria-label="Main">
