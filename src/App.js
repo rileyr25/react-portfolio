@@ -1,6 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
 import NavBar from './components/global/NavBar';
-import ColorSchemeToggle from './components/global/ColorSchemeToggle';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import Lab from './components/pages/Lab';
@@ -10,7 +9,6 @@ import './styles/import.scss';
 function App() {
   return (
     <div id='#' className="App">
-        <ColorSchemeToggle />
         <NavBar />
     
         <Routes>
