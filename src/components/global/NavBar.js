@@ -9,24 +9,18 @@ function NavBar() {
                 <Link to='/' className="logo"><h1>RR</h1></Link>
                 <nav aria-label="Main">
                     <ul>
-                        
-                        <li>
-                            <NavLink exact activeClassName='active' to='/'>
-                            <Icon name="home"/>Home</NavLink>
-                        </li>
-                        <li>
-                            <NavLink activeClassName='active' to='/projects'>
-                            <Icon name="projects"/>Projects</NavLink>
-                        </li>
-                        <li>
-                            <NavLink activeClassName='active' to='/lab'>
-                            <Icon name="lab"/>Lab</NavLink>
-                        </li>
-                        <li>
-                            <NavLink activeClassName='active' to='/about'>
-                            <Icon name="about"/>About</NavLink>
-                        </li>
-
+                        {[
+                            ['home', '/'],
+                            ['projects', '/projects'],
+                            ['lab', '/lab'],
+                            ['about', '/about']
+                        ].map(([title, url]) => (
+                            <li>
+                                <NavLink activeClassName='active' to={url}>
+                                    <Icon name={title}/> {title[0].toUpperCase()+title.slice(1)}
+                                </NavLink>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
             </div>

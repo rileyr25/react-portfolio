@@ -12,7 +12,7 @@ function App() {
 
   
   return (
-    <div id='#' className="App bg-slate-200 dark:bg-neutral-600">
+    <div id='#' className="App bg-slate-200 dark:bg-darkbg dark:text-white">
 
         <NavBar />
         <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
