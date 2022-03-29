@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css'
-import './normalize-fwd.css'
+import './styles/index.css'
+import './styles/normalize-fwd.css'
 import App from './App';
 
 ReactDOM.render(

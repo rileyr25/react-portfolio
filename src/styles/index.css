@@ -1,0 +1,47 @@
+@import 'tailwindcss/base';;
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+/* switch styles edited from https://codepen.io/mburnette/pen/LxNxNg */
+#switch[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.dm-label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 60px;
+	height: 30px;
+	background: rgb(43, 73, 104);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+.dm-label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+#switch:checked + .dm-label {
+	background: #cdd8e9;
+}
+
+#switch:checked + .dm-label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.dm-label:active:after {
+	width: 30px;
+}
