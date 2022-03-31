@@ -11,7 +11,7 @@ function NavBar() {
     return (
         <header className='text-white bg-black dark:bg-blue-700'>
             <div className="navbar">
-                <div className="mobile-header flex justify-between items-center">
+                <div className="mobile-header flex justify-between items-center p-2">
                 <Link to='/' className="logo"><h1>RR</h1></Link>
                 <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>

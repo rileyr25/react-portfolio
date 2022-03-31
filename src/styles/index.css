@@ -8,6 +8,7 @@
 	height: 0;
 	width: 0;
 	visibility: hidden;
+	position: absolute;
 }
 
 .dm-label {
