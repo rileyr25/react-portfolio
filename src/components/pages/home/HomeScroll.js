@@ -13,7 +13,7 @@ function HomeScroll() {
     // <SwiperSlide><img src={`${IMG_PATH}${proData.images.img3}`} alt="" /></SwiperSlide>
 
     return (
-        <div className='HomeScroll'>
+        <div className='home-scroll pt-12'>
             <section id='projects' className="home-projects">
                 <h2>{proData.title}</h2>
                 <p>{proData.excerpt}</p>

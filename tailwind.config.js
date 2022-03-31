@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       colors: {
         'darkbg': '#121212',
+      },
+      maxWidth: {
+        '5/6': '83%',
       }
     },
   },

@@ -9,10 +9,10 @@ function NavBar() {
     const [darkMode, setDarkMode] = useDarkMode();
 
     return (
-        <header className='text-white bg-black dark:bg-blue-700'>
+        <header className='text-black bg-black dark:text-white dark:bg-blue-700'>
             <div className="navbar">
                 <div className="mobile-header flex justify-between items-center p-2">
-                <Link to='/' className="logo"><h1>RR</h1></Link>
+                <Link to='/' className="logo text-white"><h1>RR</h1></Link>
                 <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>
                 <nav aria-label="Main" className='fixed bottom-0 border-t border-gray-700 w-full bg-white dark:bg-darkbg'>

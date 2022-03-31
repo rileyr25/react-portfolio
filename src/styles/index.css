@@ -46,3 +46,8 @@
 .dm-label:active:after {
 	width: 30px;
 }
+
+/* landing styles */
+.landing {
+	min-height: -webkit-fill-available;
+}
