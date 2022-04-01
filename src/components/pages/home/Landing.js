@@ -25,7 +25,7 @@ function Landing() {
                     >
                         Riley Robertson
                     </motion.h1>
-                    <span className='block bg-slate-200 relative w-full h-10' aria-hidden='true'></span>
+                    <span className='block bg-slate-200 dark:bg-darkbg relative w-full h-10 mt-3' aria-hidden='true'></span>
                 </div>
                 <div className="info-container mt-10 ">
                     <motion.p
@@ -35,7 +35,7 @@ function Landing() {
                     >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit amet minus sint, nemo necessitatibus?
                     </motion.p>
-                    <span className='block bg-slate-200 absolute w-full h-10' aria-hidden='true'></span>
+                    <span className='block bg-slate-200 dark:bg-darkbg absolute w-full h-10' aria-hidden='true'></span>
                 </div>
                 <div className="title-container relative">
                     <motion.p
