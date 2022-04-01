@@ -27,7 +27,7 @@ function Landing() {
                     </motion.h1>
                     <span className='block bg-slate-200 relative w-full h-10' aria-hidden='true'></span>
                 </div>
-                <div className="info-container top-15 mt-10 absolute ">
+                <div className="info-container mt-10 ">
                     <motion.p
                     initial={{y: "100%", opacity: 0}}
                     animate={{y: 0, opacity: 1}}
@@ -35,22 +35,22 @@ function Landing() {
                     >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit amet minus sint, nemo necessitatibus?
                     </motion.p>
-                    <span className='block bg-slate-200 relative w-full h-10' aria-hidden='true'></span>
+                    <span className='block bg-slate-200 absolute w-full h-10' aria-hidden='true'></span>
                 </div>
-                <div className="title-container top-12 mt-10 absolute">
+                <div className="title-container relative">
                     <motion.p
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
-                    transition={{ease: "easeOut", duration: 1, delay: 1}}
-                    className='flex'
+                    transition={{ease: "easeOut", duration: 1, delay: 1.2}}
+                    className='flex z-20'
                     >Front End
                         <span id='title' className='pl-1.5'>
                         <Typist
 
                         >
-                            <Typist.Delay ms={1500} />
+                            <Typist.Delay ms={2500} />
                             &lt;<span>Developer </span>/&gt;
-                            <Typist.Backspace count={14} delay={5000}/>
+                            <Typist.Backspace count={14} delay={4000}/>
                             <Typist.Delay ms={500}/>
                             <span>Designer</span>
                             <Typist.Backspace count={8} delay={6000}/>
@@ -59,7 +59,6 @@ function Landing() {
                         </Typist>
                         </span>
                     </motion.p>
-                    <span className='block bg-slate-200 relative w-full h-6' aria-hidden='true'></span>
                 </div>
             </div>
             {/* </motion.div> */}
