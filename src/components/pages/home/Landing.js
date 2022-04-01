@@ -39,20 +39,23 @@ function Landing() {
                 </div>
                 <div className="title-container top-12 mt-10 absolute">
                     <motion.p
-                    initial={{y: "100%", opacity: 0}}
-                    animate={{y: 0, opacity: 1}}
-                    transition={{ease: "easeOut", duration: 1}}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{ease: "easeOut", duration: 1, delay: 1}}
                     className='flex'
                     >Front End
                         <span id='title' className='pl-1.5'>
-                        <Typist>
-                            <Typist.Delay ms={2500} />
+                        <Typist
+
+                        >
+                            <Typist.Delay ms={1500} />
                             &lt;<span>Developer </span>/&gt;
                             <Typist.Backspace count={14} delay={5000}/>
                             <Typist.Delay ms={500}/>
                             <span>Designer</span>
                             <Typist.Backspace count={8} delay={6000}/>
                             &lt;<span>Developer </span>/&gt;
+                            
                         </Typist>
                         </span>
                     </motion.p>
