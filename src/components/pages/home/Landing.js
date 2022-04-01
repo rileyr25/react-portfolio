@@ -16,36 +16,48 @@ function Landing() {
                 animate={{y: 0, opacity: 1}}
                 transition={{ease: "easeOut", duration: 1}}
             > */}
-            <div className="landing-info">
-                <div className="name-container">
-                <motion.h1
-                    initial={{y: "100%"}}
-                    animate={{y: 0}}
+            <div className="landing-info relative h-56">
+                <div className="name-container absolute">
+                    <motion.h1
+                    initial={{y: "100%", opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
                     transition={{ease: "easeOut", duration: 1}}
-                >
-                    Riley Robertson
-                </motion.h1>
-                <span className='block bg-pink-500 relative w-full h-10' aria-hidden='true'></span>
+                    >
+                        Riley Robertson
+                    </motion.h1>
+                    <span className='block bg-slate-200 relative w-full h-10' aria-hidden='true'></span>
                 </div>
-                <div className="info-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit amet minus sint, nemo necessitatibus?</p>
-                    <span className='block bg-pink-500 relative w-full h-8' aria-hidden='true'></span>
+                <div className="info-container top-15 mt-10 absolute ">
+                    <motion.p
+                    initial={{y: "100%", opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{ease: "easeOut", duration: 1}}
+                    >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit amet minus sint, nemo necessitatibus?
+                    </motion.p>
+                    <span className='block bg-slate-200 relative w-full h-10' aria-hidden='true'></span>
                 </div>
-                <div className="title-container"></div>
-                <p>Front End
-                    <span id='title'>
-                    <Typist>
-                        <Typist.Delay ms={2500} />
-                        &lt;<span>Developer </span>/&gt;
-                        <Typist.Backspace count={14} delay={5000}/>
-                        <Typist.Delay ms={500}/>
-                        <span>Designer</span>
-                        <Typist.Backspace count={8} delay={6000}/>
-                        &lt;<span>Developer </span>/&gt;
-                    </Typist>
-                    </span>
-                </p>
-                <span className='block bg-pink-500 relative w-full h-8' aria-hidden='true'></span>
+                <div className="title-container top-12 mt-10 absolute">
+                    <motion.p
+                    initial={{y: "100%", opacity: 0}}
+                    animate={{y: 0, opacity: 1}}
+                    transition={{ease: "easeOut", duration: 1}}
+                    className='flex'
+                    >Front End
+                        <span id='title' className='pl-1.5'>
+                        <Typist>
+                            <Typist.Delay ms={2500} />
+                            &lt;<span>Developer </span>/&gt;
+                            <Typist.Backspace count={14} delay={5000}/>
+                            <Typist.Delay ms={500}/>
+                            <span>Designer</span>
+                            <Typist.Backspace count={8} delay={6000}/>
+                            &lt;<span>Developer </span>/&gt;
+                        </Typist>
+                        </span>
+                    </motion.p>
+                    <span className='block bg-slate-200 relative w-full h-6' aria-hidden='true'></span>
+                </div>
             </div>
             {/* </motion.div> */}
             {/* <VerticalNav /> */}
