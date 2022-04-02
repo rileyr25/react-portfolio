@@ -11,11 +11,11 @@ function NavBar() {
     return (
         <header className='text-black bg-black dark:text-white dark:bg-blue-700'>
             <div className="navbar">
-                <div className="mobile-header flex justify-between items-center p-2">
+                <div className="mobile-header flex justify-between items-center p-2 h-14">
                 <Link to='/' className="logo text-white"><h1>RR</h1></Link>
                 <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>
-                <nav aria-label="Main" className='fixed bottom-0 border-t border-gray-700 w-full bg-white dark:bg-darkbg'>
+                <nav aria-label="Main" className='fixed bottom-0 border-t border-gray-700 w-full bg-white dark:bg-darkbg h-20'>
                     <ul className='flex justify-between'>
                         {[
                             ['home', '/'],

@@ -47,7 +47,14 @@
 	width: 30px;
 }
 
-/* landing styles */
+/* landing bug fix */
+
+html, body, #root, .app {
+	height: 100%;
+}
+.home {
+	height: 100%;
+}
 .landing {
-	min-height: -webkit-fill-available;
+	min-height: calc(100% - 140px);
 }

@@ -9,14 +9,8 @@ function Landing() {
 
     // min-h-[calc(100vh-200px)]
     return (
-        <div className='landing min-h-[calc(100vh)] flex flex-col justify-between px-5 m-auto'>
-            {/* <div className="top-slant"></div> */}
-            {/* <motion.div className="landing-main"
-                initial={{y: "100%", opacity: 0}}
-                animate={{y: 0, opacity: 1}}
-                transition={{ease: "easeOut", duration: 1}}
-            > */}
-            <div className="landing-info relative h-56">
+        <div className='landing flex flex-col px-5 m-auto justify-between'>
+            <div className="landing-info relative">
                 <div className="name-container absolute">
                     <motion.h1
                     initial={{y: "100%", opacity: 0}}
@@ -61,9 +55,7 @@ function Landing() {
                     </motion.p>
                 </div>
             </div>
-            {/* </motion.div> */}
-            {/* <VerticalNav /> */}
-            <div className="next-arrow self-center px-10 py-5 text-3xl">
+            <div className="next-arrow self-center justify-self-end px-10 py-5 text-3xl ">
                 <HashLink className='arrow-link' smooth to='#projects'><BsChevronCompactDown /></HashLink>
             </div>
         </div>

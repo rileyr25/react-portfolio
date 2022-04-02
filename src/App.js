@@ -9,7 +9,7 @@ import Toggle from './components/global/Toggle';
 
 function App() {
   return (
-    <div id='#' className="App bg-slate-200 dark:bg-darkbg dark:text-white">
+    <div id='#' className="app bg-slate-200 dark:bg-darkbg dark:text-white mb-14">
       <NavBar />
       <Routes>
         <Route path="/" exact element={<Home />}/>
