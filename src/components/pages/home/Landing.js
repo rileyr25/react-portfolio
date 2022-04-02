@@ -1,16 +1,22 @@
-import React from 'react'
 import Typist from 'react-typist'
 import {BsChevronCompactDown} from 'react-icons/bs'
 import { HashLink } from 'react-router-hash-link'
-import VerticalNav from './VerticalNav'
 import { motion } from 'framer-motion'
+
 
 function Landing() {
     //veiwport height event listener
-    window.addEventListener('resize', () => {
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
+        window.addEventListener('resize', () => {
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+
+        window.addEventListener('orientationchange', () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+
     return (
         <section className='landing flex flex-col px-5 m-auto justify-between'>
             <div className="landing-info relative">
