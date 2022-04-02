@@ -6,11 +6,11 @@ import ContactCta from '../global/ContactCta'
 function Home() {
 
     return (
-        <section className='home mb-20'>
+        <main className='home'>
             <Landing />
             <HomeScroll />
             <ContactCta />
-        </section>
+        </main>
     )
 }
 

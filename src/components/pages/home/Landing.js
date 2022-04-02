@@ -9,7 +9,7 @@ function Landing() {
 
     // min-h-[calc(100vh-200px)]
     return (
-        <div className='landing flex flex-col px-5 m-auto justify-between'>
+        <section className='landing flex flex-col px-5 m-auto justify-between'>
             <div className="landing-info relative">
                 <div className="name-container absolute">
                     <motion.h1
@@ -58,7 +58,7 @@ function Landing() {
             <div className="next-arrow self-center justify-self-end px-10 py-5 text-3xl ">
                 <HashLink className='arrow-link' smooth to='#projects'><BsChevronCompactDown /></HashLink>
             </div>
-        </div>
+        </section>
     )
 }
 
