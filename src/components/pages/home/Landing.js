@@ -6,8 +6,11 @@ import VerticalNav from './VerticalNav'
 import { motion } from 'framer-motion'
 
 function Landing() {
-
-    // min-h-[calc(100vh-200px)]
+    //veiwport height event listener
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
     return (
         <section className='landing flex flex-col px-5 m-auto justify-between'>
             <div className="landing-info relative">
@@ -63,5 +66,3 @@ function Landing() {
 }
 
 export default Landing
-
-//bg-slate-200 dark:bg-darkbg

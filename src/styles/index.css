@@ -49,12 +49,10 @@
 
 /* landing bug fix */
 
-html, body, #root, .app {
-	height: 100%;
-}
-.home {
-	height: 100%;
-}
 .landing {
-	min-height: calc(100% - 140px);
+	height: calc((var(--vh, 1vh) * 100) - 140px);
 }
+
+/* html, body, #root {
+	min-height: 100%;
+} */
