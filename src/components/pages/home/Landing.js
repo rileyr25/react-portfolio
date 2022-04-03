@@ -5,22 +5,23 @@ import { motion } from 'framer-motion'
 
 
 function Landing() {
-    //veiwport height event listener
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-        window.addEventListener('resize', () => {
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
-
-        window.addEventListener('orientationchange', () => {
+        function resize() {
             let vh = window.innerHeight * 0.01;
             document.documentElement.style.setProperty('--vh', `${vh}px`);
-        });
+        }
+        window.addEventListener('resize', resize);
+        window.addEventListener('load', resize);
+        window.addEventListener('orientationchange', resize);
+
+        // window.addEventListener('orientationchange', () => {
+        //     let vh = window.innerHeight * 0.01;
+        //     document.documentElement.style.setProperty('--vh', `${vh}px`);
+        // });
 
     return (
         <section className='landing flex flex-col px-5 m-auto justify-between'>
-            <div className="landing-info relative">
-                <div className="name-container absolute">
+            <div className="landing-info relative align-center mt-[60%]">
+                <div className="name-container absolute text-xl font-semibold">
                     <motion.h1
                     initial={{y: "100%", opacity: 0}}
                     animate={{y: 0, opacity: 1}}
@@ -30,7 +31,7 @@ function Landing() {
                     </motion.h1>
                     <span className='block bg-slate-200 dark:bg-darkbg relative w-full h-10 mt-3' aria-hidden='true'></span>
                 </div>
-                <div className="info-container mt-10 ">
+                <div className="info-container mt-10 pt-2">
                     <motion.p
                     initial={{y: "100%", opacity: 0}}
                     animate={{y: 0, opacity: 1}}
@@ -40,7 +41,7 @@ function Landing() {
                     </motion.p>
                     <span className='block bg-slate-200 dark:bg-darkbg absolute w-full h-10' aria-hidden='true'></span>
                 </div>
-                <div className="title-container relative">
+                <div className="title-container relative pt-2 text-xl">
                     <motion.p
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}

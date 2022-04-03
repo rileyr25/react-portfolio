@@ -15,13 +15,13 @@ function HomeScroll() {
     return (
         <section className='home-scroll pt-12'>
             <section id='projects' className="home-projects">
-                <h2>{proData.title}</h2>
+                <h2 className='text-center font-semibold text-2xl'>{proData.title}</h2>
                 <p>{proData.excerpt}</p>
                 <Link to='/projects'>View Projects</Link>
             </section>
 
             <section id='lab' className="home-lab">
-                <h2>{labData.title}</h2>
+                <h2 className='text-center font-semibold text-2xl'>{labData.title}</h2>
                 <p>{labData.excerpt}</p>
                 <div className="lab-images">
                     <img  src={`${IMG_PATH}${labData.images.img1}`} alt="" />
