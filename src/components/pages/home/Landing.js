@@ -20,7 +20,7 @@ function Landing() {
 
     return (
         <section className='landing flex flex-col px-5 m-auto justify-between'>
-            <div className="landing-info relative align-center mt-[60%]">
+            <div className="landing-info relative align-center top-[40%]">
                 <div className="name-container absolute text-xl font-semibold">
                     <motion.h1
                     initial={{y: "100%", opacity: 0}}
@@ -46,7 +46,7 @@ function Landing() {
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{ease: "easeOut", duration: 1, delay: 1.2}}
-                    className='flex z-20'
+                    className='flex z-10'
                     >Front End
                         <span id='title' className='pl-1.5'>
                         <Typist

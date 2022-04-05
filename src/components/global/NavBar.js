@@ -15,7 +15,7 @@ function NavBar() {
                 <Link to='/' className="logo text-white"><h1>RR</h1></Link>
                 <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>
-                <nav aria-label="Main" className='fixed bottom-0 border-t border-gray-700 w-full bg-white dark:bg-darkbg h-20'>
+                <nav aria-label="Main" className='fixed bottom-0 border-t border-gray-700 w-full bg-white dark:bg-darkbg h-20 z-50'>
                     <ul className='flex justify-between'>
                         {[
                             ['home', '/'],
