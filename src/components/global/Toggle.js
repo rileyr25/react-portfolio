@@ -1,5 +1,3 @@
-import React from 'react'
-import { MoonIcon, SunIcon } from '@heroicons/react/outline'
 
 function Toggle({ darkMode, setDarkMode }) {
     return (

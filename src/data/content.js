@@ -106,14 +106,17 @@ export const content = {
         socials: [
             {
                 name: 'github',
+                title: 'GitHub',
                 link: 'https://github.com/rileyr25',
             },
             {
                 name: 'codepen',
+                title: 'CodePen',
                 link: 'https://codepen.io/rileyr25',
             },
             {
                 name: 'linkedin',
+                title: 'LinkedIn',
                 link: 'https://linkedin.com',
             },
         ]
