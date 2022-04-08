@@ -86,7 +86,7 @@ const Icon = ( props ) => {
         <>
             {ico.filter(icon => icon.name === props.name)
             .map((Icon, key) =>
-                (<Icon.ICON key={key} className='m-auto mb-1.5 text-xl' />)
+                (<Icon.ICON key={key} className='icon m-auto text-xl' />)
             )}
         </>
     )

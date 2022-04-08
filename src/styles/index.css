@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@layer components {
+	.icon {
+		@apply m-auto text-xl
+	}
+}
 
 /* switch styles edited from https://codepen.io/mburnette/pen/LxNxNg */
 #switch[type=checkbox]{
