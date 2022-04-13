@@ -19,8 +19,8 @@
 .dm-label {
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 60px;
-	height: 30px;
+	width: 40px;
+	height: 16px;
 	background: rgb(43, 73, 104);
 	display: block;
 	border-radius: 100px;
@@ -30,10 +30,10 @@
 .dm-label:after {
 	content: '';
 	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 20px;
-	height: 20px;
+	top: -1px;
+	left: 0px;
+	width: 18px;
+	height: 18px;
 	background: #fff;
 	border-radius: 90px;
 	transition: 0.3s;
@@ -44,12 +44,12 @@
 }
 
 #switch:checked + .dm-label:after {
-	left: calc(100% - 5px);
+	left: calc(100%);
 	transform: translateX(-100%);
 }
 
 .dm-label:active:after {
-	width: 30px;
+	width: 16px;
 }
 
 /* landing bug fix */
