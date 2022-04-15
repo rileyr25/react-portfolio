@@ -14,6 +14,9 @@ module.exports = {
         '55rem': '55rem',
         '2rem': '35rem',
       },
+      skew: {
+        '8': '8deg',
+      },
     },
   },
   plugins: [],
