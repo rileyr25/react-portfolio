@@ -14,26 +14,30 @@ function Projects() {
     }
 
     return (
-        <div>
-            <h1>Projects</h1>
-            <div className='type-toggle'>
-                <input 
-                type="radio"
-                id='dev'
-                name='project-type'
-                value='dev'
-                defaultChecked
-                onClick={toggleType}
-                />
-                <label for="dev">Development</label>
-                <input 
-                type="radio"
-                id='design'
-                name='project-type'
-                value='design'
-                onClick={toggleType}
-                />
-                <label for="design">Design</label>
+        <main>
+            <div className="project-heading text-center py-10">
+                <h1 className='py-5'>Projects</h1>
+                <div className='type-toggle p-1 m-auto w-4/5 max-w-2rem overflow-hidden rounded-xl border-gray-300 dark:border-zinc-800 border border-solid flex font-semibold'>
+                    <input
+                    type="radio"
+                    id='dev'
+                    name='project-type'
+                    value='dev'
+                    defaultChecked
+                    onClick={toggleType}
+                    className='invisible hidden absolute'
+                    />
+                    <label for="dev" className='p-2 md:py-3 w-1/2 rounded-lg mr-1 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white'>Development</label>
+                    <input
+                    type="radio"
+                    id='design'
+                    name='project-type'
+                    value='design'
+                    onClick={toggleType}
+                    className='invisible hidden absolute'
+                    />
+                    <label for="design" className='p-2 md:py-3 w-1/2 rounded-lg ml-1 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white'>Design</label>
+                </div>
             </div>
 
             <div className='site-display'>
@@ -54,7 +58,7 @@ function Projects() {
                     </div>
                 )}
             </div>
-        </div> 
+        </main> 
     )
 }
 
