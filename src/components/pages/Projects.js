@@ -42,11 +42,10 @@ function Projects() {
 
             <div className='site-display px-8'>
                 {siteData.filter(site => site.type === type).map(site => 
-                    <div className="site-card relative bg-gray-700 overflow-hidden rounded-xl m-4">
+                    <div className="site-card relative bg-gray-700 overflow-hidden rounded-xl my-10">
                         <img src={`${IMG_PATH}${site.images.img1}`} alt="" className=''/>
-                        <div className="site-info absolute w-full text-green-500 bottom-0 transition-all duration-200 ease-out top-2/3 hover:top-1/2 md:hover:top-2/3 h-[200%] overflow-hidden -skew-y-8 bg-gradient-to-b from-blue-400 to bg-cyan-300">
-                            {/* <div className="info-bg transition-all duration-200 ease-out absolute -top-6 hover:-top-20 w-full h-[200%] overflow-hidden -skew-y-8 bg-gradient-to-b from-blue-400 to bg-cyan-300"></div> */}
-                            <div className="card-text relative skew-y-8 z-20 right-0">
+                        <div className="site-info absolute w-full text-green-500 bottom-0 top-3/5 h-[80%] overflow-hidden -skew-y-8 bg-gradient-to-b from-blue-400 to bg-cyan-300">
+                            <div className="card-text relative skew-y-8">
                                 <h3 className=''>{site.title}</h3>
                                 <p>{site.description}</p>
                                     <div className="languages">
@@ -64,5 +63,6 @@ function Projects() {
         </main> 
     )
 }
+{/* <div className="info-bg transition-all duration-200 ease-out absolute -top-6 hover:-top-20 w-full h-[200%] overflow-hidden -skew-y-8 bg-gradient-to-b from-blue-400 to bg-cyan-300"></div> */}
 
 export default Projects
