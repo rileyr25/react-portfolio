@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { content } from '../../data/content'
+import { Link } from 'react-router-dom'
 import Icon from '../global/Icon'
 
 
@@ -44,6 +45,11 @@ function Projects() {
                 {siteData.filter(site => site.type === type).map(site => 
                     <div className="site-card relative bg-gray-700 overflow-hidden rounded-xl my-10">
                         <img src={`${IMG_PATH}${site.images.img1}`} alt="" className=''/>
+                        <div className="site-links absolute w-full h-full text-white text-center m-auto top-0">
+                            <a href={site.liveLink} target="_blank">Visit {site.title}</a>
+                            <a href={site.repo} target="_blank"><Icon name='github'/></a>
+                        </div>
+
                         <div className="site-info absolute w-full text-green-500 bottom-0 top-3/5 h-[80%] overflow-hidden skew-y-8 bg-gradient-to-b from-blue-400 to bg-cyan-300">
                             <div className="card-text relative -skew-y-8">
                                 <h3 className=''>{site.title}</h3>
