@@ -44,8 +44,8 @@ function Projects() {
                 {siteData.filter(site => site.type === type).map(site => 
                     <div className="site-card relative bg-gray-700 overflow-hidden rounded-xl my-10">
                         <img src={`${IMG_PATH}${site.images.img1}`} alt="" className=''/>
-                        <div className="site-info absolute w-full text-green-500 bottom-0 top-3/5 h-[80%] overflow-hidden -skew-y-8 bg-gradient-to-b from-blue-400 to bg-cyan-300">
-                            <div className="card-text relative skew-y-8">
+                        <div className="site-info absolute w-full text-green-500 bottom-0 top-3/5 h-[80%] overflow-hidden skew-y-8 bg-gradient-to-b from-blue-400 to bg-cyan-300">
+                            <div className="card-text relative -skew-y-8">
                                 <h3 className=''>{site.title}</h3>
                                 <p>{site.description}</p>
                                     <div className="languages">
