@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 function Projects() {
     const IMG_PATH = '/assets/images/'
-
+    const constraintsRef = useRef(null)
     let siteData = content.projects.sites
     const [type, setType] = useState('dev')
     
@@ -15,7 +15,7 @@ function Projects() {
         setType(e.target.value)
     }
 
-    const constraintsRef = useRef(null)
+    
 
     return (
         <main>
@@ -31,7 +31,7 @@ function Projects() {
                     onClick={toggleType}
                     className='invisible hidden absolute'
                     />
-                    <label for="dev" className='p-2 md:py-3 w-1/2 rounded-lg mr-1 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white'>Development</label>
+                    <label htmlFor="dev" className='p-2 md:py-3 w-1/2 rounded-lg mr-1 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white'>Development</label>
                     <input
                     type="radio"
                     id='design'
@@ -40,7 +40,7 @@ function Projects() {
                     onClick={toggleType}
                     className='invisible hidden absolute'
                     />
-                    <label for="design" className='p-2 md:py-3 w-1/2 rounded-lg ml-1 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white'>Design</label>
+                    <label htmlFor="design" className='p-2 md:py-3 w-1/2 rounded-lg ml-1 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white'>Design</label>
                 </div>
             </div>
 
@@ -50,7 +50,8 @@ function Projects() {
                         <motion.div 
                             className="image-overlay transition-all duration-500 bg-slate-700 w-[40%] rounded-full"
                             drag='x'
-                            dragMomentum={true}
+                            dragMomentum={false}
+                            // dragElastic = {{top: 0, bottom: 0, left: 0.5, right: 0.5}}
                             dragElastic={0}
                             // dragConstraints={{ top: 0, bottom: 0 }}
                             dragConstraints={constraintsRef}
@@ -59,7 +60,9 @@ function Projects() {
                                 (event, info) => console.log(info.point.x, info.point.y)
                             }
                             // dragTransition={{ bounceStiffness: 1000, bounceDamping: 1000 }}
-                            
+                            whileHover={{ cursor: "grab" }}
+                            whileDrag={{ scale: 1.2, cursor: "grabbing" }}
+                            whileTap={{cursor: "grabbing" }}
                         >
                             <img src={`${IMG_PATH}${site.images.img1}`} alt="" className='rounded-full aspect-square pointer-events-none'/>
                         </motion.div>
