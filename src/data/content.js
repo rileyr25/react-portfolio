@@ -14,7 +14,7 @@ export const content = {
             {   
                 type: 'dev',
                 name: 'binger',
-                title: 'Binger Movie Database',
+                title: 'Binger',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
                 description: 'description of the project',

@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { content } from '../../data/content'
 import { Link } from 'react-router-dom'
 import Icon from '../global/Icon'
+import { motion } from 'framer-motion'
 
 
 function Projects() {
@@ -13,6 +14,8 @@ function Projects() {
     const toggleType = e => {
         setType(e.target.value)
     }
+
+    const constraintsRef = useRef(null)
 
     return (
         <main>
@@ -41,18 +44,29 @@ function Projects() {
                 </div>
             </div>
 
-            <div className='site-display px-8'>
+            <div className='site-display px-4'>
                 {siteData.filter(site => site.type === type).map(site => 
-                    <div className="site-card relative bg-gray-700 overflow-hidden rounded-xl my-10">
-                        <img src={`${IMG_PATH}${site.images.img1}`} alt="" className=''/>
-                        <div className="site-links absolute w-full h-full text-white text-center m-auto top-0">
-                            <a href={site.liveLink} target="_blank">Visit {site.title}</a>
-                            <a href={site.repo} target="_blank"><Icon name='github'/></a>
-                        </div>
+                    <div ref={constraintsRef} className="site-card relative my-10 flex even:flex-row-reverse justify-between items-center bg-slate-800">
+                        <motion.div 
+                            className="image-overlay transition-all duration-500 bg-slate-700 w-[40%] rounded-full"
+                            drag='x'
+                            dragMomentum={true}
+                            dragElastic={0}
+                            // dragConstraints={{ top: 0, bottom: 0 }}
+                            dragConstraints={constraintsRef}
+                            dragSnapToOrigin
+                            onDragEnd={
+                                (event, info) => console.log(info.point.x, info.point.y)
+                            }
+                            // dragTransition={{ bounceStiffness: 1000, bounceDamping: 1000 }}
+                            
+                        >
+                            <img src={`${IMG_PATH}${site.images.img1}`} alt="" className='rounded-full aspect-square pointer-events-none'/>
+                        </motion.div>
 
-                        <div className="site-info absolute w-full text-green-500 bottom-0 top-3/5 h-[80%] overflow-hidden skew-y-8 bg-gradient-to-b from-blue-400 to bg-cyan-300">
-                            <div className="card-text relative -skew-y-8">
-                                <h3 className=''>{site.title}</h3>
+                        <div className="site-info transition-all duration-500">
+                            <div className="card-text relative px-2 break-words">
+                                <h3 className='text-lg font-bold'>{site.title}</h3>
                                 <p>{site.description}</p>
                                     <div className="languages">
                                         <ul className='flex flex-row'>
