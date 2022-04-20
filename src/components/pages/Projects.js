@@ -1,13 +1,14 @@
 import React, { useState, useRef } from 'react'
 import { content } from '../../data/content'
-import { Link } from 'react-router-dom'
 import Icon from '../global/Icon'
 import { motion } from 'framer-motion'
 
 
 function Projects() {
     const IMG_PATH = '/assets/images/'
+    
     const constraintsRef = useRef(null)
+
     let siteData = content.projects.sites
     const [type, setType] = useState('dev')
     
@@ -15,12 +16,12 @@ function Projects() {
         setType(e.target.value)
     }
 
-    
+    let dragLink
 
     return (
         <main>
             <div className="project-heading text-center py-10">
-                <h1 className='py-5'>Projects</h1>
+                <motion.h1 drag className='py-5'>Projects</motion.h1>
                 <div className='type-toggle p-1 m-auto w-4/5 max-w-2rem overflow-hidden rounded-xl border-gray-300 dark:border-zinc-800 border border-solid flex font-semibold'>
                     <input
                     type="radio"
@@ -46,26 +47,38 @@ function Projects() {
 
             <div className='site-display px-4'>
                 {siteData.filter(site => site.type === type).map(site => 
-                    <div ref={constraintsRef} className="site-card relative my-10 flex even:flex-row-reverse justify-between items-center bg-slate-800">
-                        <motion.div 
-                            className="image-overlay transition-all duration-500 bg-slate-700 w-[40%] rounded-full"
+                    <div ref={constraintsRef} className="site-card relative my-10 flex justify-between items-center bg-slate-800 z-10">
+                        <motion.img 
+                            className='rounded-full aspect-square w-[40%] bg-blue-200'
                             drag='x'
-                            dragMomentum={false}
-                            // dragElastic = {{top: 0, bottom: 0, left: 0.5, right: 0.5}}
-                            dragElastic={0}
-                            // dragConstraints={{ top: 0, bottom: 0 }}
-                            dragConstraints={constraintsRef}
                             dragSnapToOrigin
-                            onDragEnd={
-                                (event, info) => console.log(info.point.x, info.point.y)
+                            onDrag={
+                                (touchmove, info) => console.log(info.point.x, info.point.y)
                             }
-                            // dragTransition={{ bounceStiffness: 1000, bounceDamping: 1000 }}
+                            onDragEnd={
+                                (event, info) => {
+                                    if(info.offset.x > 140) {
+                                        window.open(site.liveLink, '_blank');
+                                    }
+
+                                    // TODO: FIX OPEN IN NEW TAB SAFARI
+
+                                    // window.location.assign(site.liveLink)
+
+                                    // const windowRef = window.open();
+
+                                    // myService.getUrl().then(function(url) {
+                                    //     windowRef.location = url;
+                                    // });
+                                }
+                            }
+                            dragConstraints={{top: 0, bottom: 0, left: 0}}
                             whileHover={{ cursor: "grab" }}
-                            whileDrag={{ scale: 1.2, cursor: "grabbing" }}
-                            whileTap={{cursor: "grabbing" }}
-                        >
-                            <img src={`${IMG_PATH}${site.images.img1}`} alt="" className='rounded-full aspect-square pointer-events-none'/>
-                        </motion.div>
+                            whileDrag={{ scale: 1.1, cursor: "grabbing"}}
+                            whileTap={{scale: 0.9, cursor: "grabbing" }}
+                            src={`${IMG_PATH}${site.images.img1}`}
+                            alt=""
+                        />
 
                         <div className="site-info transition-all duration-500">
                             <div className="card-text relative px-2 break-words">
