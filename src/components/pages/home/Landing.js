@@ -21,7 +21,7 @@ function Landing() {
 
     return (
         <section className='landing flex flex-col px-5 m-auto justify-between max-w-3xl md:mb-14'>
-            <div className="landing-info relative align-center top-[35%] max-w-[585px]">
+            <div className="landing-info relative align-center top-[35%] max-w-[585px] md:pb-5">
                 <div className="name-container absolute text-3xl leading-[3.25rem] sm:text-5xl sm:leading-[5rem] font-semibold">
                     <motion.h1
                     initial={{y: "100%", opacity: 0}}

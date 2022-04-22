@@ -5,12 +5,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer components {
-	.icon {
-		@apply m-auto text-xl
-	}
-}
-
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -40,7 +34,7 @@ h1,h2 {
 }
 
 .active {
-	color:rgb(49, 126, 214);
+	color:#317ed6;
 }
 
 .title-text {
@@ -48,6 +42,10 @@ h1,h2 {
 }
 
 /* switch styles edited from https://codepen.io/mburnette/pen/LxNxNg */
+.dark-mode-toggle {
+	z-index: 100;
+}
+
 #switch[type=checkbox]{
 	height: 0;
 	width: 0;
@@ -119,4 +117,28 @@ input[type=radio] + label {
 
 .swiper-3d .swiper-slide-shadow {
 	display: none;
+}
+
+@media (min-width: 768px) {
+	.nav-link {
+		display: inline-block;
+		padding: 10px 15px;
+		position: relative;
+	}
+	.nav-link:after {    
+		background: none repeat scroll 0 0 transparent;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 3px;
+		left: 50%;
+		position: absolute;
+		background: #317ed6;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0;
+	}
+	.nav-link:hover:after { 
+		width: 100%; 
+		left: 0; 
+	}
 }

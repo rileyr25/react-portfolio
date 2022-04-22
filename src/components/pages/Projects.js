@@ -43,7 +43,7 @@ function Projects() {
             </div>
 
             <div className="slide flex text-lg justify-center items-center text-gray-600">
-                <InformationCircleIcon className='w-5' />
+                <InformationCircleIcon className='w-5 mr-1' />
                 <p>Slide to Visit</p>
             </div>
 

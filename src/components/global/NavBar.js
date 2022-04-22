@@ -23,7 +23,7 @@ function NavBar() {
                             ['about', '/about']
                         ].map(([title, url]) => (
                             <li className='py-4 w-1/4 text-center'>
-                                <NavLink activeClassName='active' className='' to={url}>
+                                <NavLink activeClassName='active' className='nav-link' to={url}>
                                     <Icon name={title} class='nav-icon m-auto text-xl mb-1 md:hidden' /> 
                                     <span className=''>{title[0].toUpperCase()+title.slice(1)}</span>
                                 </NavLink>
