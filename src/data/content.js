@@ -5,9 +5,9 @@ export const content = {
             excerpt: 'here are my projects come take a look at my projects bruh they are kinda cool not really though im workin on it',
             cta: 'View Projects',
             images: {
-                img1: 'binger.png',
-                img2: 'binger.png',
-                img3: 'binger.png',
+                img1: 'mobile-portfolio.png',
+                img2: 'mobile-binger.png',
+                img3: 'mobile-food.png',
             },
         },
         sites: [

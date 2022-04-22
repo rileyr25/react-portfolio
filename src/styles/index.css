@@ -1,4 +1,7 @@
-@import 'tailwindcss/base';;
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Roboto+Mono&display=swap');
+
+
+@import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
@@ -6,6 +9,42 @@
 	.icon {
 		@apply m-auto text-xl
 	}
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.name {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+    /* line-height: 3.25rem; */
+}
+
+.site-title {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+h1,h2 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.title-dev {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.title-design {
+	font-family: 'Indie Flower', cursive;
+	/* font-size: 1.65rem; */
+}
+
+.active {
+	color:rgb(49, 126, 214);
+}
+
+.title-text {
+	align-items: center;
 }
 
 /* switch styles edited from https://codepen.io/mburnette/pen/LxNxNg */
@@ -78,21 +117,6 @@ input[type=radio] + label {
 	transition: all .3s;
 }
 
-/* site card pulse */
-.pulse {
-	animation: pulse 1.2s ease infinite;
-	background: blue;
-  }
-
-  @keyframes pulse {
-	0% {
-	  transform: scale(1, 1);
-	}
-	50% {
-	  opacity: 0.3;
-	}
-	100% {
-	  transform: scale(1.5);
-	  opacity: 0;
-	}
-  }
+.swiper-3d .swiper-slide-shadow {
+	display: none;
+}

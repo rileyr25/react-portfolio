@@ -1,7 +1,7 @@
 
 function Toggle({ darkMode, setDarkMode }) {
     return (
-        <div className='dark-mode-toggle'>
+        <div className='dark-mode-toggle absolute p-6 right-0 inline-block align-middle md:order-3'>
             <input
             className="dm-input"
             id='switch'

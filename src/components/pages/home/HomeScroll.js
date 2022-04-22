@@ -17,28 +17,30 @@ function HomeScroll() {
     return (
         <section className='home-scroll pt-12 px-6 max-w-45rem m-auto'>
             <section id='projects' className="home-projects text-center pb-8">
-                <h2 className='font-semibold text-2xl p-5'>{proData.title}</h2>
+                <h2 className='font-semibold text-3xl p-5'>{proData.title}</h2>
                 <p className=''>{proData.excerpt}</p>
-                <Swiper
-                slidesPerView={1}
-                loop={true}
-                grabCursor={true}
-                effect={"cards"}
-                autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false,
-                }}
-                modules={[EffectCards, Autoplay]}
-                className="project-images">
-                    <SwiperSlide><img src={`${IMG_PATH}${proData.images.img1}`} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={`${IMG_PATH}${proData.images.img2}`} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={`${IMG_PATH}${proData.images.img3}`} alt="" /></SwiperSlide>
-                </Swiper>
+                <div className="swiper-container py-10">
+                    <Swiper
+                    slidesPerView={1}
+                    loop={true}
+                    grabCursor={true}
+                    effect={"cards"}
+                    autoplay={{
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    }}
+                    modules={[EffectCards, Autoplay]}
+                    className="project-images">
+                        <SwiperSlide><img className='h-64 sm:h-[400px] m-auto' src={`${IMG_PATH}${proData.images.img1}`} alt="" /></SwiperSlide>
+                        <SwiperSlide><img className='h-64 sm:h-[400px] m-auto' src={`${IMG_PATH}${proData.images.img2}`} alt="" /></SwiperSlide>
+                        <SwiperSlide><img className='h-64 sm:h-[400px] m-auto' src={`${IMG_PATH}${proData.images.img3}`} alt="" /></SwiperSlide>
+                    </Swiper>
+                </div>
                 <Link to='/projects' className='w-full '>View Projects</Link>
             </section>
 
             <section id='lab' className="home-lab text-center pb-8">
-                <h2 className='font-semibold text-2xl p-5'>{labData.title}</h2>
+                <h2 className='font-semibold text-3xl p-5'>{labData.title}</h2>
                 <p className=''>{labData.excerpt}</p>
                 <Swiper
                 effect={"coverflow"}

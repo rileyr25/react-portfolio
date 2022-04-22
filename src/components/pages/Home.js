@@ -5,7 +5,7 @@ import ContactCta from '../global/ContactCta'
 function Home() {
 
     return (
-        <main className='home pb-28'>
+        <main className='home pb-20'>
             <Landing />
             <HomeScroll />
             <ContactCta />

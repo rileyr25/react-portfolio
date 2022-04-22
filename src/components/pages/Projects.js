@@ -18,7 +18,7 @@ function Projects() {
     return (
         <main>
             <div className="project-heading text-center py-10">
-                <motion.h1 drag className='py-5'>Projects</motion.h1>
+                <h1 className='py-5'>Projects</h1>
                 <div className='type-toggle p-1 m-auto w-4/5 max-w-2rem overflow-hidden rounded-xl border-gray-300 dark:border-zinc-800 border border-solid flex font-semibold'>
                     <input
                     type="radio"
@@ -42,14 +42,14 @@ function Projects() {
                 </div>
             </div>
 
-            <div className="slide flex">
+            <div className="slide flex text-lg justify-center items-center text-gray-600">
                 <InformationCircleIcon className='w-5' />
                 <p>Slide to Visit</p>
             </div>
 
             <div className='site-display px-4'>
                 {siteData.filter(site => site.type === type).map(site => 
-                    <div className="site-card relative my-10 flex items-center z-10 h-36 bg-slate-300 dark:bg-zinc-900 p-2 rounded-xl">
+                    <div className="site-card relative my-10 flex items-center z-10 min-h-36 max-h-48 max-w-lg m-auto bg-slate-300 dark:bg-zinc-900 p-2 rounded-xl">
                         {/* <motion.div className="rounded-full aspect-square w-[35%] bg-blue-200"
                                                     drag='x'
                                                     dragSnapToOrigin
@@ -111,7 +111,7 @@ function Projects() {
 
                         {/* </motion.div> */}
                         <div className="site-info flex flex-col mx-3 justify-evenly w-2/3 h-full">
-                            <h3 className='text-xl font-bold'>{site.title}</h3>
+                            <h3 className='site-title text-xl font-bold'>{site.title}</h3>
                             <p className='text-sm'>{site.description}</p>
                             <button className='font-semibold text-blue-500 self-start'>More Info</button>
                         </div>
