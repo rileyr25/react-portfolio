@@ -34,7 +34,7 @@ h1,h2 {
 }
 
 .active {
-	color:#317ed6;
+	color: #3b82f6;
 }
 
 .title-text {
@@ -133,7 +133,7 @@ input[type=radio] + label {
 		height: 3px;
 		left: 50%;
 		position: absolute;
-		background: #317ed6;
+		background: #3b82f6;
 		transition: width 0.3s ease 0s, left 0.3s ease 0s;
 		width: 0;
 	}

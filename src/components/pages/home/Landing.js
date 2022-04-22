@@ -67,7 +67,7 @@ function Landing() {
                     </motion.p>
                 </div>
             </div>
-            <div className="next-arrow self-center justify-self-end px-10 py-5 text-3xl ">
+            <div className="next-arrow self-center justify-self-end px-10 py-7 text-3xl ">
                 <HashLink className='arrow-link text-4xl md:text-5xl' smooth to='#projects'><BsChevronCompactDown /></HashLink>
             </div>
         </section>
