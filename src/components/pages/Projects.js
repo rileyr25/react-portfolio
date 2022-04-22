@@ -2,12 +2,11 @@ import React, { useState, useRef } from 'react'
 import { content } from '../../data/content'
 import Icon from '../global/Icon'
 import { motion } from 'framer-motion'
+import { InformationCircleIcon } from '@heroicons/react/outline'
 
 
 function Projects() {
     const IMG_PATH = '/assets/images/'
-    
-    const constraintsRef = useRef(null)
 
     let siteData = content.projects.sites
     const [type, setType] = useState('dev')
@@ -15,8 +14,6 @@ function Projects() {
     const toggleType = e => {
         setType(e.target.value)
     }
-
-    let dragLink
 
     return (
         <main>
@@ -45,16 +42,46 @@ function Projects() {
                 </div>
             </div>
 
+            <div className="slide flex">
+                <InformationCircleIcon className='w-5' />
+                <p>Slide to Visit</p>
+            </div>
+
             <div className='site-display px-4'>
                 {siteData.filter(site => site.type === type).map(site => 
-                    <div ref={constraintsRef} className="site-card relative my-10 flex justify-between items-center bg-slate-800 z-10">
+                    <div className="site-card relative my-10 flex items-center z-10 h-36 bg-slate-300 dark:bg-zinc-900 p-2 rounded-xl">
+                        {/* <motion.div className="rounded-full aspect-square w-[35%] bg-blue-200"
+                                                    drag='x'
+                                                    dragSnapToOrigin
+                                                    onDragEnd={
+                                                        (event, info) => {
+                                                            if(info.offset.x > 140) {
+                                                                window.open(site.liveLink, '_blank');
+                                                            }
+                        
+                                                            // TODO: FIX OPEN IN NEW TAB SAFARI
+                        
+                                                            // window.location.assign(site.liveLink)
+                        
+                                                            // const windowRef = window.open();
+                        
+                                                            // myService.getUrl().then(function(url) {
+                                                            //     windowRef.location = url;
+                                                            // });
+                                                        }
+                                                    }
+                                                    dragConstraints={{top: 0, bottom: 0, left: 0}}
+                                                    whileHover={{ cursor: "grab" }}
+                                                    whileDrag={{ scale: 1.1, cursor: "grabbing", class: 'pulse'}}
+                                                    whileTap={{scale: 0.9, cursor: "grabbing" }}
+                                                    src={`${IMG_PATH}${site.images.img1}`}
+                                                    alt=""
+                        > */}
+                        <div className='rounded-full w-[35%] bg-slate-200 dark:bg-zinc-800'>
                         <motion.img 
-                            className='rounded-full aspect-square w-[40%] bg-blue-200'
+                            className='site-card-img rounded-full aspect-square object-cover'
                             drag='x'
                             dragSnapToOrigin
-                            onDrag={
-                                (touchmove, info) => console.log(info.point.x, info.point.y)
-                            }
                             onDragEnd={
                                 (event, info) => {
                                     if(info.offset.x > 140) {
@@ -73,25 +100,27 @@ function Projects() {
                                 }
                             }
                             dragConstraints={{top: 0, bottom: 0, left: 0}}
-                            whileHover={{ cursor: "grab" }}
-                            whileDrag={{ scale: 1.1, cursor: "grabbing"}}
+                            whileHover={{ cursor: "grab",}}
+                            whileDrag={{ scale: 1.1, cursor: "grabbing" }}
                             whileTap={{scale: 0.9, cursor: "grabbing" }}
                             src={`${IMG_PATH}${site.images.img1}`}
                             alt=""
                         />
+                        </div>
 
-                        <div className="site-info transition-all duration-500">
-                            <div className="card-text relative px-2 break-words">
-                                <h3 className='text-lg font-bold'>{site.title}</h3>
-                                <p>{site.description}</p>
-                                    <div className="languages">
-                                        <ul className='flex flex-row'>
-                                            {site.skills.map(skill =>
-                                                <li><Icon name={skill} /></li>
-                                            )}
-                                        </ul>
-                                    </div>
-                            </div>
+
+                        {/* </motion.div> */}
+                        <div className="site-info flex flex-col mx-3 justify-evenly w-2/3 h-full">
+                            <h3 className='text-xl font-bold'>{site.title}</h3>
+                            <p className='text-sm'>{site.description}</p>
+                            <button className='font-semibold text-blue-500 self-start'>More Info</button>
+                        </div>
+                        <div className="languages m-auto bg-gray-300 dark:bg-gray-800 py-2 px-1 rounded-2xl">
+                            <ul className='flex flex-col'>
+                                {site.skills.map(skill =>
+                                    <li className='my-1'><Icon name={skill} class='text-xl' /></li>
+                                )}
+                            </ul>
                         </div>
                     </div>
                 )}

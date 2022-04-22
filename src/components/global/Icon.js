@@ -7,7 +7,26 @@ import { HiOutlineMail } from 'react-icons/hi'
 
 
 const Icon = ( props ) => {
-
+    const IconConfig = {
+        // Colors
+        primary: {
+          bgColor: 'bg-primary-500',
+          color: 'text-white',
+          outline:
+            'border-primary-500 text-primary-500 bg-opacity-0 hover:bg-opacity-10',
+        },
+        secondary: {
+          bgColor: 'bg-secondary-500',
+          color: 'text-white',
+          outline:
+            'border-secondary-500 text-secondary-500 bg-opacity-0 hover:bg-opacity-10',
+        },
+      
+        // Sizes
+        small: 'px-3 py-2',
+        medium: 'px-4 py-2',
+        large: 'px-5 py-2',
+      };
     const ico = [
         {
             name: 'html',
@@ -86,10 +105,10 @@ const Icon = ( props ) => {
         <>
             {ico.filter(icon => icon.name === props.name)
             .map((Icon, key) =>
-                (<Icon.ICON key={key} className='icon m-auto text-xl' />)
+                (<Icon.ICON key={key} className={props.class}/>)
             )}
         </>
     )
 }
-
+// className='icon m-auto text-xl'
 export default Icon

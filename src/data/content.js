@@ -17,7 +17,7 @@ export const content = {
                 title: 'Binger',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
-                description: 'description of the project',
+                description: 'description of the project lorem blajdflasdfkjhasfdasf asdfjaskdf',
                 images: {
                     img1: 'binger.png',
                 },
