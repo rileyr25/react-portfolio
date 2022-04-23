@@ -90,7 +90,7 @@ function Projects() {
                         <div className="languages pt-2 px-1 row-span-1 col-span-2 self-center">
                             <ul className='flex justify-between items-start '>
                                 {site.skills.map(skill =>
-                                    <li className='p-1 border border-gray-400 dark:border-gray-700 rounded-lg'><Icon name={skill} class='text-xl inline-block' /><p className='inline-block pl-1 text-sm'>{skill}</p></li>
+                                    <li className='p-1 border border-gray-400 dark:border-gray-700 rounded-lg'><Icon name={skill} class='text-xl inline-block' /><p className='inline-block pl-1 text-sm cursor-default'>{skill}</p></li>
                                 )}
                             </ul>
                         </div>
