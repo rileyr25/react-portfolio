@@ -123,7 +123,7 @@ input[type=radio] + label {
 	background-image: url(/public/assets/images/waves.svg);
 	background-position: bottom;
 	background-repeat: no-repeat;
-};
+}
 
 @media (min-width: 768px) {
 	.nav-link {

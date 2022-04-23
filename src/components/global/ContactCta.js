@@ -13,9 +13,9 @@ function ContactCta() {
     }
     let data = content.contact
     return (
-        <section id='contact' className='contact-cta text-center m-auto pb-20 text-white'>
+        <section id='contact' className='contact-cta text-center m-auto pb-14 text-white'>
             <div className='pt-10'>
-                <h2 className='text-3xl font-semibold pt-12'>Get in Touch</h2>
+                <h2 className='text-3xl font-semibold mt-12'>Get in Touch</h2>
                 <p className='mb-5'>{data.message}</p>
                 <Tippy
                     content={message}
