@@ -3,6 +3,7 @@ import {content} from '../../../data/content'
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCards, EffectCoverflow, Navigation } from "swiper";
+import { ArrowRightIcon } from '@heroicons/react/outline'
 import "swiper/css/effect-cards";
 import "swiper/css/navigation";
 import 'swiper/css'
@@ -15,7 +16,7 @@ function HomeScroll() {
     const IMG_PATH = '/assets/images/'
 
     return (
-        <section className='home-scroll pt-12 px-6 max-w-45rem m-auto'>
+        <section className='home-scroll pt-10 pb-14 px-6 max-w-45rem m-auto'>
             <section id='projects' className="home-projects text-center pb-8">
                 <h2 className='font-semibold text-3xl p-5'>{proData.title}</h2>
                 <p className='md:text-lg'>{proData.excerpt}</p>
@@ -36,10 +37,10 @@ function HomeScroll() {
                         <SwiperSlide><img className='h-64 sm:h-[400px] m-auto' src={`${IMG_PATH}${proData.images.img3}`} alt="" /></SwiperSlide>
                     </Swiper>
                 </div>
-                <Link to='/projects' className='w-full '>View Projects</Link>
+                <Link to='/projects' className='w-full hover:scale-150 transition-all font-semibold text-xl text-blue-500 hover:text-blue-700'>View Projects <ArrowRightIcon className='w-6 inline' /></Link>
             </section>
 
-            <section id='lab' className="home-lab text-center pb-8">
+            {/* <section id='lab' className="home-lab text-center pb-8">
                 <h2 className='font-semibold text-3xl p-5'>{labData.title}</h2>
                 <p className='md:text-lg'>{labData.excerpt}</p>
                 <Swiper
@@ -61,7 +62,7 @@ function HomeScroll() {
                     <SwiperSlide><img  src={`${IMG_PATH}${labData.images.img3}`} alt="" /></SwiperSlide>
                 </Swiper>
                 <Link to='/lab' className='w-full text-center'>Visit Lab</Link>
-            </section> 
+            </section>  */}
         </section>
     )
 }

@@ -14,12 +14,12 @@ function NavBar() {
                 <Link to='/' className="logo md:font-normal text-black dark:text-white"><h1>RR</h1></Link>
                 </div>
                 <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
-                <nav aria-label="Main" className='fixed bottom-0 border-t md:relative md:border-0 md:w-2/3 md:h-auto md:bg-transparent  border-gray-700 w-full bg-white dark:bg-darkbg h-20 z-50'>
-                    <ul className='flex justify-between m-auto md:max-w-sm'>
+                <nav aria-label="Main" className='fixed bottom-0 border-t md:relative md:border-0 md:w-2/4 md:h-auto md:bg-transparent  border-gray-700 w-full bg-white dark:bg-darkbg h-20 z-50'>
+                    <ul className='flex justify-evenly m-auto md:mr-16 md:max-w-sm'>
                         {[
                             ['home', '/'],
                             ['projects', '/projects'],
-                            ['lab', '/lab'],
+                            // ['lab', '/lab'],
                             ['about', '/about']
                         ].map(([title, url]) => (
                             <li className='py-4 w-1/4 text-center'>
