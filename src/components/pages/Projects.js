@@ -52,7 +52,7 @@ function Projects() {
 
             <div className='site-display px-4'>
                 {siteData.filter(site => site.type === type).map(site => 
-                    <div className="site-card mx-auto my-6 bg-slate-300 dark:bg-zinc-900 p-2 rounded-xl max-w-lg grid grid-cols-[35%_1fr] grid-rows-4">
+                    <div className="site-card mx-auto my-6 bg-slate-300 dark:bg-zinc-900 p-2 rounded-xl max-w-lg grid grid-cols-[35%_1fr] auto-rows-min">
                         <div className='rounded-full mr-4 row-span-3 self-center'>
                         <motion.img 
                             className='site-card-img'
@@ -84,22 +84,16 @@ function Projects() {
                         />
                         </div>
                         
-                                <h3 className='site-title text-2xl font-bold row-span-1 self-center'>{site.title}</h3>
-                                <p className='text-sm row-span-1'>{site.description}</p>
-                                <button className='font-semibold text-blue-500 row-span-1 place-self-start'>More Info</button>
-                                <div className="languages pt-2 px-1 row-span-1 col-span-2 self-center">
-                                    <ul className='flex justify-between items-start '>
-                                        {site.skills.map(skill =>
-                                            <li className='p-1 bg-gray-400 rounded-lg'><Icon name={skill} class='text-xl inline-block' /><p className='inline-block pl-1 text-sm'>{skill}</p></li>
-                                        )}
-                                    </ul>
-                                </div>
-                        {/* <div className="site-info flex flex-col mx-3 justify-evenly w-2/3 h-full">
-                            <div className="project-header flex flex-wrap items-center justify-between">
-
-                            </div>
-
-                        </div> */}
+                        <h3 className='site-title text-2xl font-bold row-span-1 self-center'>{site.title}</h3>
+                        <p className='text-sm sm:text-base row-span-1'>{site.description}</p>
+                        <button className='font-semibold sm:text-lg text-blue-500 row-span-1 self-center place-self-start'>More Info</button>
+                        <div className="languages pt-2 px-1 row-span-1 col-span-2 self-center">
+                            <ul className='flex justify-between items-start '>
+                                {site.skills.map(skill =>
+                                    <li className='p-1 border border-gray-400 dark:border-gray-700 rounded-lg'><Icon name={skill} class='text-xl inline-block' /><p className='inline-block pl-1 text-sm'>{skill}</p></li>
+                                )}
+                            </ul>
+                        </div>
                     </div>
 
                 )}

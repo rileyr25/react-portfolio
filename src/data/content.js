@@ -31,12 +31,12 @@ export const content = {
             },
             {   
                 type: 'dev',
-                name: 'Food Blog',
-                title: 'Food Blog',
+                name: 'Food Explorer',
+                title: 'Food Explorer',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
                 excerpt: 'short excerpt',
-                description: 'description of the project',
+                description: 'Food Explorer is a ',
                 images: {
                     img1: 'food-tablet.png',
                 },
