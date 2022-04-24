@@ -58,7 +58,7 @@ h1,h2 {
 	text-indent: -9999px;
 	width: 40px;
 	height: 16px;
-	background: rgb(43, 73, 104);
+	background: #121212;
 	display: block;
 	border-radius: 100px;
 	position: relative;
@@ -100,7 +100,7 @@ label {
 	cursor: pointer;
 }
 input[type=radio]:checked + label{
-	background-color: cornflowerblue;
+	background-color: #3b82f6;
 	color: white;
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
