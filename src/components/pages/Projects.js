@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { content } from '../../data/content'
 import Icon from '../global/Icon'
 import { motion } from 'framer-motion'
@@ -18,7 +19,7 @@ function Projects() {
     }
 
     return (
-        <main className='pb-10'>
+        <main className='h-screen pb-10'>
             <div className="project-heading text-center py-10">
                 <h1 className='py-5'>Projects</h1>
                 <div className='type-toggle p-1 m-auto w-4/5 max-w-2rem overflow-hidden rounded-xl border-gray-300 dark:border-zinc-800 border border-solid flex font-semibold'>
@@ -87,11 +88,11 @@ function Projects() {
                         <h3 className='site-title text-2xl font-bold row-span-1 self-center'>{site.title}</h3>
                         <p className='text-sm sm:text-base row-span-1'>{site.description}</p>
                         <div className="flex justify-between items-center row-span-1">
-                            <button className='font-semibold sm:text-lg text-blue-500 hover:text-blue-700 transition-colors'>More Info</button>
-                            <div className="languages pt-2 px-1 row-span-1 col-span-2">
+                            <Link to={`/projects/${site.name}`} state={site} className='font-semibold sm:text-lg text-blue-500 hover:text-blue-700 transition-colors'>More Info</Link>
+                            <div className="languages row-span-1 col-span-2">
                                 <ul className='flex justify-between items-start '>
                                     {site.skills.map(skill =>
-                                        <li className='mx-2'><Icon name={skill} class='text-2xl' /></li>
+                                        <li className='mx-1 xs:mx-2'><Icon name={skill} class='text-xl xs:text-2xl' /></li>
                                     )}
                                 </ul>
                             </div>

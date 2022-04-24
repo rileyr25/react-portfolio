@@ -31,7 +31,7 @@ export const content = {
             },
             {   
                 type: 'dev',
-                name: 'Food Explorer',
+                name: 'food-explorer',
                 title: 'Food Explorer',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
@@ -69,7 +69,7 @@ export const content = {
             },
             {   
                 type: 'design',
-                name: 'binger mockup',
+                name: 'binger-mockup',
                 title: 'Binger Mock',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',

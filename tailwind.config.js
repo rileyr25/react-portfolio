@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-
+      screens: {
+        'xs': '430px',
       },
       colors: {
         'darkbg': '#121212',

@@ -3,6 +3,7 @@ import NavBar from './components/global/NavBar';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import Lab from './components/pages/Lab';
+import Single from './components/pages/Single';
 import Projects from './components/pages/Projects';
 import useDarkMode from './hooks/useDarkMode';
 import Toggle from './components/global/Toggle';
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />}/>
         <Route path='projects' element={<Projects />}/>
+        <Route path='/projects/:name' element={<Single/>}/>
         <Route path='lab' element={<Lab />}/>
         <Route path='about' element={<About />}/>
       </Routes>
