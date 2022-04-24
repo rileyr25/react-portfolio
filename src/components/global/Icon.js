@@ -57,7 +57,7 @@ const Icon = ( props ) => {
             ICON: IoLogoJavascript,
         },
         {
-            name: 'JQuery',
+            name: 'jQuery',
             ICON: SiJquery,
         },
         {

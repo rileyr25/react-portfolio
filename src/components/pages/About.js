@@ -13,7 +13,7 @@ function About() {
                 <p className='text-center'>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores illo natus minima voluptatem numquam ipsum velit eaque ea! Labore doloremque nam repellat, temporibus laboriosam cum quam nesciunt harum est molestiae iusto asperiores soluta hic consectetur quaerat laborum omnis vitae nemo!
                 </p>
-                <div className="skills">
+                <div className="skills text-center">
                     <h2 className='text-2xl'>Skills:</h2>
                     <ul className='flex flex-wrap max-w-lg m-auto justify-center'>
                         {content.about.skills.map(skill => 

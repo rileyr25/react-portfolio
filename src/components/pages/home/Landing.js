@@ -49,16 +49,16 @@ function Landing() {
                     initial={{opacity: 0}}
                     animate={{opacity: 1}}
                     transition={{ease: "easeOut", duration: 1, delay: 1.2}}
-                    className='title-text flex z-10 mt-2 items-center sm:text-3xl'
+                    className='title-text flex z-10 mt-2 items-center sm:text-3xl align-middle'
                     >   
-                        <span>Front End</span>
-                        <span id='typist-title' className='pl-1.5'>
+                        <span className='h-[1.9rem]'>Front End</span>
+                        <span id='typist-title' className='pl-1.5 h-8'>
                         <Typist className='text-xl sm:text-3xl'>
                             <Typist.Delay ms={2500} />
-                            <span className='title-dev'>&lt;Developer /&gt;</span>
+                            <span className='title-dev text-xl sm:text-3xl'>&lt;Developer /&gt;</span>
                             <Typist.Backspace count={14} delay={4000}/>
                             <Typist.Delay ms={500}/>
-                            <span className='title-design sm:text-[2.25rem]'>Designer</span>
+                            <span className='title-design text-2xl sm:text-[2.25rem]'>Designer</span>
                             <Typist.Backspace count={8} delay={6000}/>
                             <span className='title-dev hover:bg-black hover:text-green-600 cursor-default'>&lt;Developer /&gt;</span>
                             

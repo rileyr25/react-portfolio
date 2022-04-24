@@ -20,12 +20,14 @@ export const content = {
                 description: 'Binger is a movie database built with React.js. Browse a vast selection of movies add the best to your favourites list. ',
                 images: {
                     img1: 'binger-tablet.png',
+                    img2: 'binger.png',
+                    img1: 'binger-tablet.png',
                 },
                 skills: [
                     'HTML',
                     'React',
                     'Sass',
-                    'php',
+                    'JavaScript',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
@@ -46,7 +48,6 @@ export const content = {
                     'sass',
                     'javascript',
                 ],
-                about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
             {   
                 type: 'dev',
@@ -126,7 +127,7 @@ export const content = {
             'HTML',
             'CSS',
             'JavaScript',
-            'JQuery',
+            'jQuery',
             'React',
             'WordPress',
             'Photoshop',

@@ -45,7 +45,7 @@ function Projects() {
                 </div>
             </div>
 
-            <div className="slide flex text-md justify-center items-center text-gray-600">
+            <div className="slide flex text-md justify-center items-center text-gray-600 dark:text-gray-400">
                 {/* <InformationCircleIcon className='w-5 mr-1' /> */}
                 <MdOutlineSwipe className='w-5 mr-1' />
                 <p>Swipe Device to Visit</p>
@@ -88,7 +88,10 @@ function Projects() {
                         <h3 className='site-title text-2xl font-bold row-span-1 self-center'>{site.title}</h3>
                         <p className='text-sm sm:text-base row-span-1'>{site.description}</p>
                         <div className="flex justify-between items-center row-span-1">
-                            <Link to={`/projects/${site.name}`} state={site} className='font-semibold sm:text-lg text-blue-500 hover:text-blue-700 transition-colors'>More Info</Link>
+                            {site.about ? 
+                            <Link to={`/projects/${site.name}`} state={site} className='flex items-center font-semibold text-sm xs:text-lg text-blue-500 hover:text-blue-700 transition-colors'><InformationCircleIcon className='inline-block w-5 align-top'/><p className='ml-1'>More Info</p></Link>
+                            : <a href={site.repo} target='_blank' className='flex items-center align-bottom font-semibold text-sm xs:text-lg text-blue-500 hover:text-blue-700 transition-colors'><Icon name="github" class='inline-block text-[1.125rem] align-top'/><p className='ml-1'>View Repo</p></a>
+                            }
                             <div className="languages row-span-1 col-span-2">
                                 <ul className='flex justify-between items-start '>
                                     {site.skills.map(skill =>
