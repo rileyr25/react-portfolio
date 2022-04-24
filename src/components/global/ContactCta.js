@@ -33,7 +33,7 @@ function ContactCta() {
                 </Tippy>
                 <ul className='flex justify-center p-3 max-w-sm m-auto'>
                     {data.socials.map(social =>
-                    <li className='px-4 w-1/3 transition-opacity hover:opacity-80'>
+                    <li className='px-4 w-1/3 transition-opacity hover:opacity-70'>
                         <a className='' href={social.link} target='_blank' rel='noreferrer'>
                             <Icon name={social.name} class='m-auto text-2xl mb-2'/> {social.title}
                         </a>

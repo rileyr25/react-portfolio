@@ -73,7 +73,7 @@ const Icon = ( props ) => {
             ICON: SiAdobephotoshop,
         },
         {
-            name: 'XD',
+            name: 'Adobe XD',
             ICON: SiAdobexd,
         },
         {

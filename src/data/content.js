@@ -131,7 +131,7 @@ export const content = {
             'WordPress',
             'Photoshop',
             'Figma',
-            'XD',
+            'Adobe XD',
         ]
     }
 };
