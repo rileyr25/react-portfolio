@@ -22,9 +22,9 @@ export const content = {
                     img1: 'binger-tablet.png',
                 },
                 skills: [
-                    'react',
-                    'sass',
-                    'html',
+                    'HTML',
+                    'React',
+                    'Sass',
                     'php',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
@@ -123,15 +123,15 @@ export const content = {
     },
     about: {
         skills: [
-            'html',
-            'css',
-            'js',
-            'jquery',
-            'react',
-            'wordpress',
-            'photoshop',
-            'figma',
-            'xd',
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'JQuery',
+            'React',
+            'WordPress',
+            'Photoshop',
+            'Figma',
+            'XD',
         ]
     }
 };

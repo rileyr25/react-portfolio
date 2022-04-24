@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaHtml5, FaCss3, FaFigma, FaReact, FaWordpressSimple, FaSass, FaGithub, FaCodepen, FaLinkedin} from 'react-icons/fa'
 import { IoLogoJavascript } from 'react-icons/io'
-import { SiPhp, SiAdobephotoshop, SiAdobexd } from 'react-icons/si'
+import { SiPhp, SiAdobephotoshop, SiAdobexd, SiJquery, SiTailwindcss } from 'react-icons/si'
 import { BiHome, BiRocket, BiUser, BiDna } from 'react-icons/bi'
 import { HiOutlineMail } from 'react-icons/hi'
 
@@ -29,43 +29,51 @@ const Icon = ( props ) => {
       };
     const ico = [
         {
-            name: 'html',
+            name: 'HTML',
             ICON: FaHtml5,
         },
         {
-            name: 'css',
+            name: 'CSS',
             ICON: FaCss3,
         },
         {
-            name: 'figma',
+            name: 'Figma',
             ICON: FaFigma,
         },
         {
-            name: 'react',
+            name: 'React',
             ICON: FaReact,
         },
         {
-            name: 'wordpress',
+            name: 'WordPress',
             ICON: FaWordpressSimple,
         },
         {
-            name: 'sass',
+            name: 'Sass',
             ICON: FaSass,
         },
         {
-            name: 'javascript',
+            name: 'JavaScript',
             ICON: IoLogoJavascript,
         },
         {
-            name: 'php',
+            name: 'JQuery',
+            ICON: SiJquery,
+        },
+        {
+            name: 'Tailwind',
+            ICON: SiTailwindcss,
+        },
+        {
+            name: 'PHP',
             ICON: SiPhp,
         },
         {
-            name: 'photoshop',
+            name: 'Photoshop',
             ICON: SiAdobephotoshop,
         },
         {
-            name: 'xd',
+            name: 'XD',
             ICON: SiAdobexd,
         },
         {
