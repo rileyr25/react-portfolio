@@ -8,7 +8,7 @@ function NavBar() {
     const [darkMode, setDarkMode] = useDarkMode();
 
     return (
-        <header className='text-black relative m-auto dark:text-white max-w-4xl'>
+        <header className='text-gray-600 relative m-auto dark:text-gray-200 max-w-4xl'>
             <div className="nav-wrapper w-full md:flex md:justify-between md:items-center md:font-semibold md:text-lg md:w-full">
                 <div className="mobile-header inline-block align-middle p-4">
                 <Link to='/' className="logo w-10"><img className='w-20' src="assets/images/logo1.png" alt="" /></Link>

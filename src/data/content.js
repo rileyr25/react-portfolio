@@ -17,7 +17,7 @@ export const content = {
                 title: 'Binger',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
                 repo: 'https://github.com/rileyr25/binger',
-                description: 'Binger is a movie database built with React.js. Search through a vast selection of movies add them to your favourites list. ',
+                description: 'Binger is a movie database built with React.js. Browse a vast selection of movies add the best to your favourites list. ',
                 images: {
                     img1: 'binger-tablet.png',
                 },

@@ -86,13 +86,15 @@ function Projects() {
                         
                         <h3 className='site-title text-2xl font-bold row-span-1 self-center'>{site.title}</h3>
                         <p className='text-sm sm:text-base row-span-1'>{site.description}</p>
-                        <button className='font-semibold sm:text-lg text-blue-500 row-span-1 self-center place-self-start'>More Info</button>
-                        <div className="languages pt-2 px-1 row-span-1 col-span-2 self-center">
-                            <ul className='flex justify-between items-start '>
-                                {site.skills.map(skill =>
-                                    <li className='p-1 border border-gray-400 dark:border-gray-700 rounded-lg'><Icon name={skill} class='text-xl inline-block' /><p className='inline-block pl-1 text-sm cursor-default'>{skill}</p></li>
-                                )}
-                            </ul>
+                        <div className="flex justify-between items-center row-span-1">
+                            <button className='font-semibold sm:text-lg text-blue-500 hover:text-blue-700 transition-colors'>More Info</button>
+                            <div className="languages pt-2 px-1 row-span-1 col-span-2">
+                                <ul className='flex justify-between items-start '>
+                                    {site.skills.map(skill =>
+                                        <li className='mx-2'><Icon name={skill} class='text-2xl' /></li>
+                                    )}
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
