@@ -44,6 +44,7 @@ export const content = {
                 skills: [
                     'HTML',
                     'Sass',
+                    'JavaScript',
                 ],
             },
             {   
@@ -111,10 +112,8 @@ export const content = {
                     img1: 'binger.png',
                 },
                 skills: [
-                    'figma',
-                    'photoshop',
-                    'xd',
-                    'javascript',
+                    'Photoshop',
+                    'Adobe XD',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
