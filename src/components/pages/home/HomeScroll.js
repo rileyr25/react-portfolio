@@ -19,7 +19,7 @@ function HomeScroll() {
         <section className='home-scroll pt-10 pb-14 px-6 max-w-45rem m-auto'>
             <section id='projects' className="home-projects text-center pb-8">
                 <h2 className='font-semibold text-3xl p-5'>{proData.title}</h2>
-                <p className='md:text-lg'>{proData.excerpt}</p>
+                <p className='text-lg'>{proData.excerpt}</p>
                 <div className="swiper-container py-10">
                     <Swiper
                     slidesPerView={1}

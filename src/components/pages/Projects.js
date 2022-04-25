@@ -63,7 +63,7 @@ function Projects() {
                             dragSnapToOrigin
                             onDragEnd={
                                 (event, info) => {
-                                    if(info.offset.x > 140) {
+                                    if(info.offset.x > 160) {
                                         window.open(site.liveLink, '_blank');
                                     }
 
@@ -78,7 +78,7 @@ function Projects() {
                                     // });
                                 }
                             }
-                            dragConstraints={{top: 0, bottom: 0, left: 0}}
+                            dragConstraints={{top: 0, bottom: 0, left: 0, right: 200}}
                             whileHover={{ cursor: "grab",}}
                             whileDrag={{ scale: 1.1, cursor: "grabbing" }}
                             whileTap={{scale: 0.9, cursor: "grabbing" }}

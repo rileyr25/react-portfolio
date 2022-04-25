@@ -2,7 +2,7 @@ export const content = {
     projects: {
         landingContent: {
             title: 'Projects',
-            excerpt: 'here are my projects come take a look at my projects bruh they are kinda cool not really though im workin on it',
+            excerpt: 'Check out my latest projects, and keep an eye out for more coming soon...',
             cta: 'View Projects',
             images: {
                 img1: 'mobile-portfolio.png',
