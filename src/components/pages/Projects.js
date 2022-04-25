@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import ContactCta from '../global/ContactCta'
 import { content } from '../../data/content'
 import Icon from '../global/Icon'
 import { motion } from 'framer-motion'
@@ -19,7 +20,7 @@ function Projects() {
     }
 
     return (
-        <main className='min-h-screen pb-24'>
+        <main className='min-h-screen'>
             <div className="project-heading text-center py-10">
                 <h1 className='py-5'>Projects</h1>
                 <div className='type-toggle p-1 m-auto w-4/5 max-w-2rem overflow-hidden rounded-xl border-gray-300 dark:border-zinc-800 border border-solid flex font-semibold'>
@@ -52,10 +53,10 @@ function Projects() {
             : <p></p>
             }
 
-            <div className='site-display px-4'>
+            <div className='site-display px-4 '>
                 {siteData.filter(site => site.type === type).map(site => 
                     <div className="site-card mx-auto my-6 bg-slate-300 dark:bg-zinc-900 p-2 py-3 rounded-xl max-w-lg grid grid-cols-[35%_1fr] auto-rows-min">
-                        <div className='rounded-full mr-4 row-span-3 self-center'>
+                        <div className='mr-4 row-span-3 self-center'>
                         {type === 'dev' 
                         ?   <motion.img 
                             className='site-card-img'
@@ -94,7 +95,7 @@ function Projects() {
                         </div>
                         
                         <h3 className='site-title text-xl xs:text-2xl font-bold row-span-1 self-center'>{site.title}</h3>
-                        <p className='text-sm sm:text-base row-span-1'>{site.description}</p>
+                        <p className='text-sm sm:text-base row-span-1 pb-1'>{site.description}</p>
                         <div className="flex justify-between items-center row-span-1">
                             {site.about 
                             ? <Link to={`/projects/${site.name}`} state={site} className='flex items-center font-semibold text-sm xs:text-lg text-blue-500 hover:text-blue-700 transition-colors'><InformationCircleIcon className='inline-block w-5 align-top'/><p className='ml-1'>More Info</p></Link>
@@ -112,6 +113,7 @@ function Projects() {
 
                 )}
             </div>
+            <ContactCta />
         </main> 
     )
 }

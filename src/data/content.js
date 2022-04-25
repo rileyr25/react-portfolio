@@ -20,8 +20,8 @@ export const content = {
                 description: 'Binger is a movie database built with React.js. Browse a vast selection of movies add the best to your favourites list. ',
                 images: {
                     img1: 'binger-tablet.png',
-                    img2: 'binger.png',
-                    img1: 'binger-tablet.png',
+                    img2: 'binger-display.png',
+                    img3: 'binger-tablet.png',
                 },
                 skills: [
                     'HTML',
@@ -29,6 +29,7 @@ export const content = {
                     'Sass',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
+                feat: 'here are features',
             },
             {   
                 type: 'dev',
@@ -40,6 +41,7 @@ export const content = {
                 description: 'Fully responsive food blog homepage, based on a pre-existing design. Utilizes modern Flexbox and Grid techniques and was built in a team using GitHub.',
                 images: {
                     img1: 'food-tablet.png',
+                    img2: 'food-display.png',
                 },
                 skills: [
                     'HTML',
@@ -54,9 +56,10 @@ export const content = {
                 liveLink: 'https://www.rileyrobertson.ca/',
                 repo: 'https://github.com/rileyr25/binger',
                 excerpt: 'short excerpt',
-                description: 'description of the project',
+                description: 'Portfolio website built with React.js and styled with TailwindCSS to display my work as a front-end developer and designer.',
                 images: {
                     img1: 'portfolio-tablet.png',
+                    img2: 'portfolio-display.png',
                 },
                 skills: [
                     'HTML',
@@ -71,9 +74,10 @@ export const content = {
                 title: 'Change Your Brain',
                 liveLink: 'https://changeyourbrain.ca/',
                 excerpt: 'short excerpt',
-                description: 'description of the project',
+                description: 'Change Your Brain is a WordPress site built for a small business owner. The site allows you to learn more about the service, subscribe to their newsletter and view any classes or events it is hosting.',
                 images: {
                     img1: 'cyb-tablet.png',
+                    img2: 'cyb-display.png',
                 },
                 skills: [
                     'WordPress',
@@ -88,9 +92,10 @@ export const content = {
                 liveLink: 'https://cozycabins.bcitwebdeveloper.ca/',
                 repo: 'https://github.com/htpwebdesign/cozy-cabins',
                 excerpt: 'short excerpt',
-                description: 'description of the project',
+                description: 'A WordPress site that allows you to browse a selection available cabins and book a stay for you and your friends/family. This site uses WooCommerce to handle the booking process.',
                 images: {
                     img1: 'cabins-tablet.png',
+                    img2: 'cabin-display2.png',
                 },
                 skills: [
                     'WordPress',
@@ -99,6 +104,8 @@ export const content = {
                     'JavaScript',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
+                feat: 'features',
+                exp: 'good experience'
             },
             {   
                 type: 'design',

@@ -28,7 +28,7 @@ function ContactCta() {
                         navigator.clipboard.writeText(data.email)
                         setMessage('Copied!')
                     }}
-                    className='w-48 flex justify-center m-auto pb-4 text-lg items-center font-semibold hover:underline'><Icon name='email' class='text-xl mt-1 mx-1'/>{data.email}
+                    className='w-48 flex justify-center m-auto pb-4 text-lg items-center font-semibold hover:underline'><Icon name='email' class='text-lg mx-1'/>{data.email}
                 </button>
                 </Tippy>
                 <ul className='flex justify-center px-3 max-w-sm m-auto'>
