@@ -93,7 +93,7 @@ const Icon = ( props ) => {
             ICON: BiUser,
         },
         {
-            name: 'github',
+            name: 'GitHub',
             ICON: FaGithub,
         },
         {

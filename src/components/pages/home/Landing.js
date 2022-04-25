@@ -38,9 +38,9 @@ function Landing() {
                     initial={{y: "100%", opacity: 0}}
                     animate={{y: 0, opacity: 1}}
                     transition={{ease: "easeOut", duration: 1}}
-                    className='sm:text-xl'
+                    className='text-lg xs:text-xl max-w-[85%] sm:max-w-none'
                     >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste velit amet minus sint, nemo necessitatibus?
+                        Passionate creator, with a love for building captivating and responsive user interfaces on the web.
                     </motion.p>
                     <span className='block bg-slate-200 dark:bg-darkbg absolute w-full h-10' aria-hidden='true'></span>
                 </div>
@@ -60,7 +60,7 @@ function Landing() {
                             <Typist.Delay ms={500}/>
                             <span className='title-design text-2xl sm:text-[2.25rem]'>Designer</span>
                             <Typist.Backspace count={8} delay={6000}/>
-                            <span className='title-dev hover:bg-black hover:text-green-600 cursor-default'>&lt;Developer /&gt;</span>
+                            <span className='title-dev hover:bg-black hover:text-green-400 cursor-default'>&lt;Developer /&gt;</span>
                             
                         </Typist>
                         </span>

@@ -34,10 +34,10 @@ export const content = {
                 type: 'dev',
                 name: 'food-explorer',
                 title: 'Food Explorer',
-                liveLink: 'https://www.rileyrobertson.ca/binger',
-                repo: 'https://github.com/rileyr25/binger',
+                liveLink: 'https://rileyrobertson.ca/food-explorer/',
+                repo: 'https://github.com/robert-watt/web-dev-2-final-project',
                 excerpt: 'short excerpt',
-                description: 'Food Explorer is a ',
+                description: 'Fully responsive food blog homepage, based on a pre-existing design. Utilizes modern Flexbox and Grid techniques and was built in a team using GitHub.',
                 images: {
                     img1: 'food-tablet.png',
                 },
@@ -55,12 +55,47 @@ export const content = {
                 excerpt: 'short excerpt',
                 description: 'description of the project',
                 images: {
-                    img1: 'school-laptop.png',
+                    img1: 'portfolio-tablet.png',
                 },
                 skills: [
                     'HTML',
                     'React',
                     'Tailwind',
+                ],
+                about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
+            },
+            {   
+                type: 'dev',
+                name: 'change-your-brain',
+                title: 'Change Your Brain',
+                liveLink: 'https://changeyourbrain.ca/',
+                excerpt: 'short excerpt',
+                description: 'description of the project',
+                images: {
+                    img1: 'cyb-tablet.png',
+                },
+                skills: [
+                    'WordPress',
+                    'CSS',
+                ],
+                about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
+            },
+            {   
+                type: 'dev',
+                name: 'cozy-cabins',
+                title: 'Cozy Cabins',
+                liveLink: 'https://cozycabins.bcitwebdeveloper.ca/',
+                repo: 'https://github.com/htpwebdesign/cozy-cabins',
+                excerpt: 'short excerpt',
+                description: 'description of the project',
+                images: {
+                    img1: 'cabins-tablet.png',
+                },
+                skills: [
+                    'WordPress',
+                    'PHP',
+                    'Sass',
+                    'JavaScript',
                 ],
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam fugiat facilis alias velit vitae provident saepe eos illum nostrum deleniti, recusandae incidunt ad consequuntur soluta maxime totam aspernatur quia quasi?',
             },
@@ -102,7 +137,7 @@ export const content = {
         email: 'riley.r@telus.net',
         socials: [
             {
-                name: 'github',
+                name: 'GitHub',
                 title: 'GitHub',
                 link: 'https://github.com/rileyr25',
             },
@@ -127,8 +162,9 @@ export const content = {
             'React',
             'WordPress',
             'Photoshop',
-            'Figma',
             'Adobe XD',
+            'Figma',
+            'GitHub',
         ]
     }
 };

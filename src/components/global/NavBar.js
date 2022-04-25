@@ -10,8 +10,8 @@ function NavBar() {
     return (
         <header className='text-gray-600 relative m-auto dark:text-gray-200 max-w-6xl'>
             <div className="nav-wrapper w-full md:flex md:justify-between md:items-center md:font-semibold md:text-lg md:w-full">
-                <div className="mobile-header inline-block align-middle p-4">
-                <Link to='/' className="logo text-2xl">RR</Link>
+                <div className="mobile-header relative inline-block align-middle p-4">
+                <Link to='/' className="logo transition-colors duration-300 text-2xl px-1 text-blue-500 hover:bg-black hover:text-green-400">&lt;<span className='logo-rr'>RR</span> /&gt;</Link>
                 </div>
                 <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 <nav aria-label="Main" className='navbar rounded-t-lg fixed bottom-0 md:relative md:w-2/4 md:h-auto  bg-slate-100/70 dark:bg-neutral-800/80 md:bg-transparent md:dark:bg-transparent backdrop-blur-lg md:backdrop-blur-none shadow-lg md:shadow-none w-full h-20 z-50'>

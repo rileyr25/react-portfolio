@@ -5,7 +5,7 @@ import Icon from '../global/Icon'
 
 function About() {
     const skillList = content.about.skills
-    console.log(skillList)
+
     return (
         <main className=''>
             <section className='px-8 py-10 m-auto max-w-3xl'>
@@ -15,8 +15,8 @@ function About() {
                 </p>
                 <div className="skills text-center">
                     <h2 className='text-2xl'>Skills:</h2>
-                    <ul className='flex flex-wrap max-w-lg m-auto justify-center'>
-                        {content.about.skills.map(skill => 
+                    <ul className='flex flex-wrap max-w-lg m-auto justify-around'>
+                        {skillList.map(skill => 
                             <li className='px-4 py-2'><Icon name={skill} class='text-2xl m-auto' /><p className='mt-1 mx-auto sm:text-lg'>{skill}</p></li>
                         )}
                     </ul>

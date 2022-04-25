@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Roboto+Mono&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Roboto+Mono&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&family=Roboto+Mono&family=Syncopate:wght@400;700&display=swap');
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
@@ -9,10 +9,26 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+.logo {
+	font-weight: 400;
+}
+
+.logo-rr {
+	font-family: 'Syncopate', sans-serif;
+	font-size: 1.75rem;
+}
+
+.logo-bg {
+	transform: translatex(-100%);
+}
+
+.logo-bg:hover {
+	transform: translateX(100%);
+}
+
 .name {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
-    /* line-height: 3.25rem; */
 }
 
 .site-title {
@@ -149,6 +165,6 @@ input[type=radio] + label {
 	}
 }
 
-.site-link {
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset;
+.project-link {
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px 0px inset;
 }

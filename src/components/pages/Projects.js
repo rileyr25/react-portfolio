@@ -19,7 +19,7 @@ function Projects() {
     }
 
     return (
-        <main className='h-screen pb-10'>
+        <main className='min-h-screen pb-24'>
             <div className="project-heading text-center py-10">
                 <h1 className='py-5'>Projects</h1>
                 <div className='type-toggle p-1 m-auto w-4/5 max-w-2rem overflow-hidden rounded-xl border-gray-300 dark:border-zinc-800 border border-solid flex font-semibold'>
@@ -44,18 +44,20 @@ function Projects() {
                     <label htmlFor="design" className='p-2 md:py-3 w-1/2 rounded-lg ml-1 text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white'>Design</label>
                 </div>
             </div>
-
-            <div className="slide flex text-md justify-center items-center text-gray-600 dark:text-gray-400">
-                {/* <InformationCircleIcon className='w-5 mr-1' /> */}
+            {type==='dev' 
+            ?   <div className="slide flex text-md justify-center items-center text-gray-600 dark:text-gray-400">
                 <MdOutlineSwipe className='w-5 mr-1' />
                 <p>Swipe Device to Visit</p>
-            </div>
+                </div>
+            : <p></p>
+            }
 
             <div className='site-display px-4'>
                 {siteData.filter(site => site.type === type).map(site => 
-                    <div className="site-card mx-auto my-6 bg-slate-300 dark:bg-zinc-900 p-2 rounded-xl max-w-lg grid grid-cols-[35%_1fr] auto-rows-min">
+                    <div className="site-card mx-auto my-6 bg-slate-300 dark:bg-zinc-900 p-2 py-3 rounded-xl max-w-lg grid grid-cols-[35%_1fr] auto-rows-min">
                         <div className='rounded-full mr-4 row-span-3 self-center'>
-                        <motion.img 
+                        {type === 'dev' 
+                        ?   <motion.img 
                             className='site-card-img'
                             drag='x'
                             dragSnapToOrigin
@@ -82,15 +84,21 @@ function Projects() {
                             whileTap={{scale: 0.9, cursor: "grabbing" }}
                             src={`${IMG_PATH}${site.images.img1}`}
                             alt=""
-                        />
+                            />
+                        :   <motion.img 
+                            className='site-card-img'
+                            src={`${IMG_PATH}${site.images.img1}`}
+                            alt=""
+                            />
+                        }
                         </div>
                         
-                        <h3 className='site-title text-2xl font-bold row-span-1 self-center'>{site.title}</h3>
+                        <h3 className='site-title text-xl xs:text-2xl font-bold row-span-1 self-center'>{site.title}</h3>
                         <p className='text-sm sm:text-base row-span-1'>{site.description}</p>
                         <div className="flex justify-between items-center row-span-1">
-                            {site.about ? 
-                            <Link to={`/projects/${site.name}`} state={site} className='flex items-center font-semibold text-sm xs:text-lg text-blue-500 hover:text-blue-700 transition-colors'><InformationCircleIcon className='inline-block w-5 align-top'/><p className='ml-1'>More Info</p></Link>
-                            : <a href={site.repo} target='_blank' className='flex items-center align-bottom font-semibold text-sm xs:text-lg text-blue-500 hover:text-blue-700 transition-colors'><Icon name="github" class='inline-block text-[1.125rem] align-top'/><p className='ml-1'>View Repo</p></a>
+                            {site.about 
+                            ? <Link to={`/projects/${site.name}`} state={site} className='flex items-center font-semibold text-sm xs:text-lg text-blue-500 hover:text-blue-700 transition-colors'><InformationCircleIcon className='inline-block w-5 align-top'/><p className='ml-1'>More Info</p></Link>
+                            : <a href={site.repo} target='_blank' className='flex items-center align-bottom font-semibold text-sm xs:text-lg text-blue-500 hover:text-blue-700 transition-colors'><Icon name="GitHub" class='inline-block text-[1.125rem] align-top'/><p className='ml-1'>View Repo</p></a>
                             }
                             <div className="languages row-span-1 col-span-2">
                                 <ul className='flex justify-between items-start '>
