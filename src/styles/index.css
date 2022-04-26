@@ -170,5 +170,5 @@ input[type=radio] + label {
 }
 
 .about {
-	height: calc(100vh - 780px);
+	min-height: 73vh;
 }

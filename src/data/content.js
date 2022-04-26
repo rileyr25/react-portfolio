@@ -110,13 +110,12 @@ export const content = {
             {   
                 type: 'design',
                 name: 'binger-mockup',
-                title: 'Binger Mock',
+                title: 'Binger Mock-up',
                 liveLink: 'https://www.rileyrobertson.ca/binger',
-                repo: 'https://github.com/rileyr25/binger',
                 excerpt: 'short excerpt',
-                description: 'description of the project',
+                description: 'Mock-up design for the Binger Movie Database website. This design was made in Photoshop and transfered to Adobe XD before being used for the development of the website.',
                 images: {
-                    img1: 'binger.png',
+                    img1: 'binger-mock.png',
                 },
                 skills: [
                     'Photoshop',
@@ -155,7 +154,7 @@ export const content = {
             {
                 name: 'linkedin',
                 title: 'LinkedIn',
-                link: 'https://linkedin.com',
+                link: 'https://www.linkedin.com/in/riley-r-99b530176/',
             },
         ]
     },

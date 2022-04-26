@@ -18,7 +18,7 @@ const Wrapper = ({children}) => {
 function App() {
   return (
     <Wrapper>
-    <div id='#' className="app bg-slate-200 dark:bg-darkbg dark:text-white pb-14 md:pb-0">
+    <div id='#' className="app relative bg-slate-200 dark:bg-darkbg dark:text-white pb-14 md:pb-0">
       <NavBar />
       <Routes>
         <Route path="/" exact element={<Home />}/>

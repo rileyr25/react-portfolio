@@ -17,14 +17,12 @@ function About() {
                     <h2 className='text-2xl pb-4'>Skills:</h2>
                     <ul className='flex flex-wrap max-w-lg m-auto justify-evenly'>
                         {skillList.map(skill => 
-                            <li className='py-2 w-[90px]'><Icon name={skill} class='text-2xl m-auto' /><p className='mt-1 mx-auto sm:text-lg'>{skill}</p></li>
+                            <li className='py-2 md:py-6 w-[90px]'><Icon name={skill} class='text-2xl m-auto' /><p className='mt-1 mx-auto sm:text-lg'>{skill}</p></li>
                         )}
                     </ul>
                 </div>
             </section>
-            <div className=''>
             <ContactCta />
-            </div>
         </main>
     )
 }
