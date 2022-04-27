@@ -1,6 +1,7 @@
 {
-  "name": "react-portfolio",
-  "version": "0.1.0",
+  "name": "riley-robertson",
+  "homepage": "https://rileyrobertson.ca",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.3",

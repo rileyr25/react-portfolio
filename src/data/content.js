@@ -115,7 +115,7 @@ export const content = {
                 excerpt: 'short excerpt',
                 description: 'Mock-up design for the Binger Movie Database website. This design was made in Photoshop and transfered to Adobe XD before being used for the development of the website.',
                 images: {
-                    img1: 'binger-mock.png',
+                    img1: 'binger-mock.jpg',
                 },
                 skills: [
                     'Photoshop',
